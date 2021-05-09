@@ -30,7 +30,7 @@
           </div>
           <div class="input-field col s12 m6">
               <input id="username" disabled name="username" type="text" value="<?php echo $user->username; ?>">
-              <label for="username" class="">Username</label>
+              <label for="username" class="">Email</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="password" name="password" type="password" value="">
@@ -46,8 +46,8 @@
           </div>
           <div class="input-field col s12 m6">
               <select id="active" name="active">
-                  <option <?php echo ($user->active === '0') ? 'selected' : ''; ?> value="0">Tidak</option>
                   <option <?php echo ($user->active === '1') ? 'selected' : ''; ?> value="1">Ya</option>
+                  <option <?php echo ($user->active === '0') ? 'selected' : ''; ?> value="0">Tidak</option>
               </select>
               <label>Active</label>
           </div>

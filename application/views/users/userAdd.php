@@ -30,7 +30,7 @@
           </div>
           <div class="input-field col s12 m6">
               <input id="username" name="username" type="text" value="<?php echo set_value('username'); ?>">
-              <label for="username" class="">Username</label>
+              <label for="username" class="">Email</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="password" name="password" type="password" value="<?php echo set_value('password'); ?>">
@@ -46,8 +46,8 @@
           </div>
           <div class="input-field col s12 m6">
               <select id="active" name="active">
-                  <option value="0">Tidak</option>
                   <option value="1">Ya</option>
+                  <option value="0">Tidak</option>
               </select>
               <label>Active</label>
           </div>
