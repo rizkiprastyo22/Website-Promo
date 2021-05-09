@@ -70,6 +70,10 @@ class Auth extends CI_Controller
   
   public function signup()
   {
+
+    // Memanggil model users
+    $this->load->model('model_users');
+
     // Jika user telah login, redirect ke base_url
     if ($this->session->userdata('logged_in')) redirect(base_url());
 
@@ -104,8 +108,8 @@ class Auth extends CI_Controller
           'nama_depan' => $this->input->post('nama_depan'),
           'nama_belakang' => $this->input->post('nama_belakang'),
           'username' => $this->input->post('username'),
-          'level' => 'alumni',
-          'active' => 1
+          'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
+          'level' => 'alumni'
         );
 
         // Jalankan function insert pada model_users
