@@ -43,7 +43,7 @@
           <div class="card-content">
             <span class="card-title">Login</span>
             <div class="row">
-              <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/login'); ?>">
+              <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/signup'); ?>">
                 <div class="row">
                   <?php if(validation_errors()): ?>
                   <div class="col s12">
@@ -76,7 +76,7 @@
       </div>
     </main>
 
-    <footer class="page-footer blue-grey lighten-1">
+    <footer class="page-footer white">
         <div class="footer-copyright blue-grey lighten-1">
             <div class="nav-wrapper container center">
               <p>Follow Us! 
