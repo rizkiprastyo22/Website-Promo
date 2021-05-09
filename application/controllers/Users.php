@@ -115,6 +115,20 @@ class Users extends MY_Controller {
   {
     // Jika form di submit jalankan blok kode ini
     if ($this->input->post('submit')) {
+
+      // Mengatur validasi data username,
+      // # required = tidak boleh kosong
+      // # min_length[5] = username harus terdiri dari minimal 5 karakter
+      // # is_unique[users.username] = username harus bernilai unique, 
+      //   tidak boleh sama dengan record yg sudah ada pada tabel users
+      $this->form_validation->set_rules('nama_depan', 'Nama Depan', 'required');
+
+      // Mengatur validasi data username,
+      // # required = tidak boleh kosong
+      // # min_length[5] = username harus terdiri dari minimal 5 karakter
+      // # is_unique[users.username] = username harus bernilai unique, 
+      //   tidak boleh sama dengan record yg sudah ada pada tabel users
+      $this->form_validation->set_rules('nama_belakang', 'Nama Belakang', 'required');
       
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
@@ -141,6 +155,8 @@ class Users extends MY_Controller {
       if ($this->form_validation->run() === TRUE) {
 
         $data = array(
+          'nama_depan' => $this->input->post('nama_depan'),
+          'nama_belakang' => $this->input->post('nama_belakang'),
           'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
           'level' => $this->input->post('level'),
           'active' => $this->input->post('active')
