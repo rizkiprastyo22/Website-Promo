@@ -38,8 +38,8 @@
           </div>
           <div class="input-field col s12 m6">
               <select id="level" name="level">
-                  <option value="administrator">Administrator</option>
                   <option value="mitra">Mitra</option>
+                  <option value="administrator">Administrator</option>
                   <option value="pelanggan">Pelanggan</option>
               </select>
               <label>Pilih Level</label>

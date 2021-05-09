@@ -38,8 +38,8 @@
           </div>
           <div class="input-field col s12 m6">
               <select id="level" name="level">
-                  <option <?php echo ($user->level === 'administrator') ? 'selected' : ''; ?> value="administrator">Administrator</option>
                   <option <?php echo ($user->level === 'mitra') ? 'selected' : ''; ?> value="mitra">Mitra</option>
+                  <option <?php echo ($user->level === 'administrator') ? 'selected' : ''; ?> value="administrator">Administrator</option>
                   <option <?php echo ($user->level === 'pelanggan') ? 'selected' : ''; ?> value="pelanggan">Pelanggan</option>
               </select>
               <label>Pilih Level</label>
