@@ -38,7 +38,7 @@
               <label for="deskripsi" class="">Deskripsi</label>
           </div>
           <div class="input-field col s12 right-align">
-              <button type="submit" name="submit" value="add_promo" class="btn amber waves-effect waves-green">Simpan</button>
+              <button type="submit" name="submit" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
       </div>
