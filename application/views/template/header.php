@@ -3,12 +3,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
     <title><?php echo $pageTitle; ?> | Hemat Warrior</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="<?php echo base_url('assets/materialize/css/materialize.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="<?php echo base_url('assets/css/kcdev.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- <link href="<?php echo base_url('css/templatemo-style.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/> -->
   </head>
   <body>
   <header>
