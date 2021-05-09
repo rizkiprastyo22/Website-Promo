@@ -38,7 +38,7 @@
           margin-top: 5%;
         }
 
-        /* .placeholder {
+        .placeholder {
           width: 100%;
           min-height: 460px;
           background-color: #556E5B;
@@ -48,7 +48,34 @@
           min-height: 460px;
           background: transparent;
           position: relative;
-        } */
+        }
+
+        .tm-header {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          color: white;
+          z-index: 1000;
+        }
+
+        .tm-header-inner {
+          padding: 40px 50px;
+        }
+
+        .tm-site-logo {
+          display: inline-block;
+          margin-right: 5px;
+        }
+
+        .tm-site-text-box {
+          display: inline-block;
+        }
+
+        .tm-site-description {
+          font-size: 1.1rem;
+          font-weight: 400;
+        }
       </style>
       
     </header>
