@@ -17,6 +17,7 @@ CREATE TABLE `users` (
 -- Records of users
 -- ----------------------------
 INSERT INTO `users` VALUES ('1', 'Nom Nom', 'Cafe', 'admin@nomnomcafe.id', '$2y$10$B2ztsNPm8JZyGR/E12rRU.itsFuvdnYCsDg/L4SZ.xCx7usFzvXUG', 'mitra', '2017-04-22 06:05:04', '1');
+INSERT INTO `users` VALUES ('2', 'Admin', 'Hemat Warrior', 'admin@hematwarrior.id', '$2y$10$B2ztsNPm8JZyGR/E12rRU.itsFuvdnYCsDg/L4SZ.xCx7usFzvXUG', 'administrator', '2017-04-22 06:05:04', '1');
 
 
 CREATE TABLE `promo` (
