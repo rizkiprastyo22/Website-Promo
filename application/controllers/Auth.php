@@ -82,15 +82,15 @@ class Auth extends CI_Controller
       
       // Mengatur validasi data nama_depan,
       // required = tidak boleh kosong
-      $this->form_validation->set_rules('nama_depan', 'Nama_depan', 'required');
+      $this->form_validation->set_rules('nama_depan', 'Nama Depan', 'required');
 
       // Mengatur validasi data nama_belakang,
       // required = tidak boleh kosong
-      $this->form_validation->set_rules('nama_belakang', 'Nama_belakang', 'required');
+      $this->form_validation->set_rules('nama_belakang', 'Nama Belakang', 'required');
 
       // Mengatur validasi data username,
       // required = tidak boleh kosong
-      $this->form_validation->set_rules('username', 'Username', 'required');
+      $this->form_validation->set_rules('username', 'Username', 'required|min_length[5]|is_unique[users.username]');
 
       // Mengatur validasi data password,
       // required = tidak boleh kosong
@@ -100,6 +100,7 @@ class Auth extends CI_Controller
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
       $this->form_validation->set_message('min_length', '%s minimal %d karakter!');
+      $this->form_validation->set_message('is_unique', '%s sudah terdaftar!');
 
       // Jalankan validasi jika semuanya benar maka lanjutkan
       if ($this->form_validation->run() === TRUE) {

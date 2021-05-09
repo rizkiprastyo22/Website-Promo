@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Login</title>
+    <title>Sign Up</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?php echo base_url('assets/materialize/css/materialize.min.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -42,16 +42,24 @@
         <div class="card z-depth-5">
           <div class="card-content">
             <span class="card-title">Sign Up</span>
-            <div class="row">
+            <div class="card-content">
+            <div class="row" id="add-promo-form" method="post" action="">
               <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/signup'); ?>">
                 <div class="row">
-                  <?php if(validation_errors()): ?>
+                <?php if(validation_errors()): ?>
                   <div class="col s12">
                     <div class="card-panel red">
                       <span class="white-text"><?php echo validation_errors('<p>', '</p>'); ?></span>
                     </div>
                   </div>
-                  <?php endif; ?>
+                <?php endif; ?>
+                <?php if($message = $this->session->flashdata('message')): ?>
+                  <div class="col s12">
+                    <div class="card-panel <?php echo ($message['status']) ? 'green' : 'red'; ?>">
+                      <span class="white-text"><?php echo $message['message']; ?></span>
+                    </div>
+                  </div>
+                <?php endif; ?>
                   <div class="input-field col m12">
                     <input id="nama_depan" type="text" class="validate" name="nama_depan">
                     <label for="nama_depan">Nama Depan</label>
