@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col s12">
     <div class="card">
-      <div class="card-content light-blue lighten-1 white-text">
+      <div class="card-content red lighten-2 white-text">
         <span class="card-title"><?php echo $pageTitle; ?></span>
       </div>
       <div class="card-content">
@@ -52,7 +52,7 @@
               <label>Active</label>
           </div>
           <div class="input-field col s12 right-align">
-              <button type="submit" name="submit" value="add_user" class="btn amber waves-effect waves-green">Simpan</button>
+              <button type="submit" name="submit" value="add_user" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
       </div>

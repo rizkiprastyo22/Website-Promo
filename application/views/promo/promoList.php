@@ -4,7 +4,7 @@
       <div class="card">
         <div class="card-content red lighten-2 white-text">
           <span class="card-title">Data Promo</span>
-          <a href="<?php echo base_url('promo/add'); ?>" class="btn-floating right halfway-fab waves-effect waves-light tooltipped green lighten-2" data-position="top" data-tooltip="Tambah Data"><i class="material-icons">add</i></a>
+          <a href="<?php echo base_url('promo/add'); ?>" class="btn-floating right halfway-fab waves-effect waves-light green lighten-2 tooltipped" data-position="top" data-tooltip="Tambah Data"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
           <?php if($message = $this->session->flashdata('message')): ?>
