@@ -41,7 +41,7 @@
       <div class="container login-box">
         <div class="card z-depth-5">
           <div class="card-content">
-            <span class="card-title">Login</span>
+            <span class="card-title">Sign Up</span>
             <div class="row">
               <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/signup'); ?>">
                 <div class="row">
@@ -53,6 +53,14 @@
                   </div>
                   <?php endif; ?>
                   <div class="input-field col m12">
+                    <input id="nama_depan" type="text" class="validate" name="nama_depan">
+                    <label for="nama_depan">Nama Depan</label>
+                  </div>
+                  <div class="input-field col m12">
+                    <input id="nama_belakang" type="text" class="validate" name="nama_belakang">
+                    <label for="nama_belakang">Nama Belakang</label>
+                  </div>
+                  <div class="input-field col m12">
                     <input id="username" type="text" class="validate" name="username">
                     <label for="username">Email</label>
                   </div>
@@ -61,7 +69,7 @@
                     <label for="password" data-error="Password yang anda masukkan salah">Password</label>
                   </div>
                   <div class="input-field col m12 left-align">
-                        Belum punya akun? <a href="#">Daftar Sekarang!</a>
+                        Sudah punya akun? Silakan <a href="<?php echo base_url('auth/login'); ?>">login</a>
                     </div>
                   <div class="input-field col m12 right-align">
                     <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">

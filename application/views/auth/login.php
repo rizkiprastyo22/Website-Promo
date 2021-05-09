@@ -61,7 +61,7 @@
                     <label for="password" data-error="Password yang anda masukkan salah">Password</label>
                   </div>
                   <div class="input-field col m12 left-align">
-                        Belum punya akun? <a href="#">Daftar Sekarang!</a>
+                        Belum punya akun? <a href="<?php echo base_url('auth/signup'); ?>">Daftar Sekarang!</a>
                     </div>
                   <div class="input-field col m12 right-align">
                     <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
