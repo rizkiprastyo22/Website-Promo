@@ -18,11 +18,11 @@
                   <tr>
                       <th>No</th>
                       <th>Nama Depan</th>
-                      <th>Nama Belakang</th>
+                      <!-- <th>Nama Belakang</th> -->
                       <th>Email</th>
                       <th>Level</th>
-                      <th class="center-align">Active</th>
-                      <th class="center-align">Last Login</th>
+                      <!-- <th class="center-align">Active</th>
+                      <th class="center-align">Last Login</th> -->
                       <th class="center-align">Action</th>
                   </tr>
               </thead>
@@ -31,11 +31,11 @@
                     <tr>
                       <td><?php echo ++$no; ?></td>
                       <td><?php echo $row->nama_depan; ?></td>
-                      <td><?php echo $row->nama_belakang; ?></td>
+                      <!-- <td><?php echo $row->nama_belakang; ?></td> -->
                       <td><?php echo $row->username; ?></td>
                       <td><?php echo $row->level; ?></td>
-                      <td class="center-align"><?php echo $row->active; ?></td>
-                      <td class="center-align"><?php echo $row->last_login; ?></td>
+                      <!-- <td class="center-align"><?php echo $row->active; ?></td>
+                      <td class="center-align"><?php echo $row->last_login; ?></td> -->
                       <td class="center-align">
                         <a href="<?php echo base_url('users/edit/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Edit Data"><i class="material-icons">edit</i></a>
                         <a href="<?php echo base_url('users/delete/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a>
