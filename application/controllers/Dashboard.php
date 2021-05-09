@@ -11,7 +11,7 @@ class Dashboard extends MY_Controller
   public function index()
   {
     $data['pageTitle'] = 'Home';
-    $data['pageContent'] = '<h1>Ini fungsi index dari controller dashboard</h1><h1>Ini fungsi index dari controller dashboard</h1><h1>Ini fungsi index dari controller dashboard</h1>';
+    $data['pageContent'] = $this->load->view('dashboard/main', $data, TRUE);
 
     $this->load->view('template/layout', $data);
   }
