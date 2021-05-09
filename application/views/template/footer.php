@@ -12,7 +12,7 @@
    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script src="<?php echo base_url('assets/materialize/js/materialize.js'); ?>"></script>
    <script src="<?php echo base_url('assets/js/kcdev.js'); ?>"></script>
-   <script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
+   <!-- <script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
    <script src="<?php echo base_url('js/parallax.min.js'); ?>"></script>
    <script>
 		$(document).ready(function(){
@@ -27,6 +27,6 @@
 				$(this).addClass("active");
 			});
 		});
-	</script>
+	</script> -->
   </body>
 </html>
