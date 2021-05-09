@@ -30,4 +30,14 @@ class MY_Controller extends CI_Controller
     if ($userData['level'] !== 'administrator') show_404();
   }
 
+  public function isMitra()
+  {
+    // Mengambil data session
+    $userData = $this->getUserData();
+
+    // Jika level user bukan administrator
+    // maka redirect ke halaman 404
+    if ($userData['level'] !== 'mitra') show_404();
+  }
+
 }

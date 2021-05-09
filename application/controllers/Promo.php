@@ -10,8 +10,8 @@ class Promo extends MY_Controller {
     $this->cekLogin();
 
     // Cek apakah user login 
-    // sebagai administrator
-    $this->isAdmin();
+    // sebagai mitra
+    $this->isMitra();
 
     // Load model Promo
     $this->load->model('model_promo');

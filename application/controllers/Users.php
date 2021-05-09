@@ -47,9 +47,9 @@ class Users extends MY_Controller {
 
       // Mengatur validasi data level,
       // # required = tidak boleh kosong
-      // # in_list[administrator, alumni] = hanya boleh bernilai 
-      //   salah satu di antara administrator atau alumni
-      $this->form_validation->set_rules('level', 'Level', 'required|in_list[administrator,alumni]');
+      // # in_list[administrator, pelanggan, mitra] = hanya boleh bernilai 
+      //   salah satu di antara administrator, pelanggan, atau mitra
+      $this->form_validation->set_rules('level', 'Level', 'required|in_list[administrator,pelanggan,mitra]');
 
       // Mengatur validasi data active,
       // # required = tidak boleh kosong
@@ -106,9 +106,9 @@ class Users extends MY_Controller {
 
       // Mengatur validasi data level,
       // # required = tidak boleh kosong
-      // # in_list[administrator, alumni] = hanya boleh bernilai 
-      //   salah satu di antara administrator atau alumni
-      $this->form_validation->set_rules('level', 'Level', 'required|in_list[administrator,alumni]');
+      // # in_list[administrator, pelanggan, mitra] = hanya boleh bernilai 
+      //   salah satu di antara administrator, pelanggan, atau mitra
+      $this->form_validation->set_rules('level', 'Level', 'required|in_list[administrator,pelanggan,mitra]');
 
       // Mengatur validasi data active,
       // # required = tidak boleh kosong
