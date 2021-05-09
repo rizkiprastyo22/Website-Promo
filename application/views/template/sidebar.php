@@ -24,7 +24,7 @@
 
     <?php if($this->session->userdata('level') === 'administrator'): ?>
       <li>
-        <a class="subheader">Admin</a>
+        <a class="subheader">Mitra</a>
       </li>
       
       <li>
