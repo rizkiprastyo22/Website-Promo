@@ -38,7 +38,7 @@
               <label for="deskripsi" class="">Deskripsi</label>
           </div>
           <div class="input-field col s12 m6">
-              <!-- <label for="foto" class="">Foto</label> -->
+              <label for="foto" class="">Foto:</label><br><br>
               <input id="foto" name="foto" type="file" accept="image/png, image/jpeg" value="<?php echo $promo->foto; ?>">
           </div>
           <div class="input-field col s12 right-align">
