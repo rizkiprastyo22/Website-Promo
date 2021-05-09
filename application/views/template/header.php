@@ -37,6 +37,18 @@
         .login-box {
           margin-top: 5%;
         }
+
+        /* .placeholder {
+          width: 100%;
+          min-height: 460px;
+          background-color: #556E5B;
+        }
+
+        .parallax-window {
+          min-height: 460px;
+          background: transparent;
+          position: relative;
+        } */
       </style>
       
     </header>
