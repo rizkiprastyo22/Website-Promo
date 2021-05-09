@@ -42,17 +42,17 @@ class Promo extends MY_Controller {
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('harga_awal', 'harga_awal', 'required');
+      $this->form_validation->set_rules('harga_awal', 'Harga Awal', 'required');
 
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('harga_promo', 'harga_promo', 'required');
+      $this->form_validation->set_rules('harga_promo', 'Harga Promo', 'required');
 
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('deskripsi', 'deskripsi', 'required');
+      $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required');
 
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
@@ -65,7 +65,8 @@ class Promo extends MY_Controller {
           'promo' => $this->input->post('promo'),
           'harga_awal' => $this->input->post('harga_awal'),
           'harga_promo' => $this->input->post('harga_promo'),
-          'deskripsi' => $this->input->post('deskripsi')
+          'deskripsi' => $this->input->post('deskripsi'),
+          'foto' => $this->input->post('foto')
         );
 
         // Jalankan function insert pada model_promo
@@ -99,17 +100,17 @@ class Promo extends MY_Controller {
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('harga_awal', 'harga_awal', 'required');
+      $this->form_validation->set_rules('harga_awal', 'Harga Awal', 'required');
 
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('harga_promo', 'harga_promo', 'required');
+      $this->form_validation->set_rules('harga_promo', 'Harga Promo', 'required');
 
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('deskripsi', 'deskripsi', 'required');
+      $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required');
 
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
@@ -121,7 +122,8 @@ class Promo extends MY_Controller {
         $data = array(
           'harga_awal' => $this->input->post('harga_awal'),
           'harga_promo' => $this->input->post('harga_promo'),
-          'deskripsi' => $this->input->post('deskripsi')
+          'deskripsi' => $this->input->post('deskripsi'),
+          'foto' => $this->input->post('foto')
         );
 
         // Jalankan function insert pada model_promo

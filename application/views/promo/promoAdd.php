@@ -37,6 +37,10 @@
               <input id="deskripsi" name="deskripsi" type="text" value="<?php echo set_value('deskripsi'); ?>">
               <label for="deskripsi" class="">Deskripsi</label>
           </div>
+          <div class="input-field col s12 m6">
+              <!-- <label for="foto" class="">Foto</label> -->
+              <input id="foto" name="foto" type="file" accept="image/png, image/jpeg" value="<?php echo set_value('foto'); ?>">
+          </div>
           <div class="input-field col s12 right-align">
               <button type="submit" name="submit" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>

@@ -26,16 +26,20 @@
               <label for="promo" class="">Promo</label>
           </div>
           <div class="input-field col s12 m6">
-              <input id="harga_awal" name="harga_awal" type="number" value="">
+              <input id="harga_awal" name="harga_awal" type="number" value="<?php echo $promo->harga_awal; ?>">
               <label for="harga_awal" class="">Harga Awal</label>
           </div>
           <div class="input-field col s12 m6">
-              <input id="harga_promo" name="harga_promo" type="number" value="">
+              <input id="harga_promo" name="harga_promo" type="number" value="<?php echo $promo->harga_promo; ?>">
               <label for="harga_promo" class="">Harga Promo</label>
           </div>
           <div class="input-field col s12 m6">
-              <input id="deskripsi" name="deskripsi" type="text" value="">
+              <input id="deskripsi" name="deskripsi" type="text" value="<?php echo $promo->deskripsi; ?>">
               <label for="deskripsi" class="">Deskripsi</label>
+          </div>
+          <div class="input-field col s12 m6">
+              <!-- <label for="foto" class="">Foto</label> -->
+              <input id="foto" name="foto" type="file" accept="image/png, image/jpeg" value="<?php echo $promo->foto; ?>">
           </div>
           <div class="input-field col s12 right-align">
               <button type="submit" name="submit" value="<?php echo $promo->id; ?>" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
