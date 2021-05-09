@@ -67,7 +67,7 @@ class Auth extends CI_Controller
     // Jalankan view auth/login.php
     $this->load->view('auth/login');
   }
-
+  
   public function signup()
   {
     // Jika user telah login, redirect ke base_url
@@ -120,17 +120,13 @@ class Auth extends CI_Controller
 
         // refresh page
         redirect('auth/signup', 'refresh');
-
-      // Jalankan validasi jika semuanya benar maka redirect ke controller dashboard
-      // if ($this->form_validation->run() === TRUE) {
-      //   redirect('auth/login');
-      // } 
+      }
     }
-    
-    // Jalankan view auth/login.php
-    $this->load->view('auth/login');
-  }
 
+    // Jalankan view auth/login.php
+    $this->load->view('auth/signup');
+  }
+    
   public function logout()
   {
     // Hapus semua data pada session
