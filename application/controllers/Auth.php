@@ -90,7 +90,7 @@ class Auth extends CI_Controller
 
       // Mengatur validasi data username,
       // required = tidak boleh kosong
-      $this->form_validation->set_rules('username', 'Username', 'required|min_length[5]|is_unique[users.username]');
+      $this->form_validation->set_rules('username', 'Email', 'required|min_length[5]|is_unique[users.username]');
 
       // Mengatur validasi data password,
       // required = tidak boleh kosong

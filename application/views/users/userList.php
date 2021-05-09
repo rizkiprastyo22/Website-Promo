@@ -17,7 +17,9 @@
               <thead>
                   <tr>
                       <th>No</th>
-                      <th>Username</th>
+                      <th>Nama Depan</th>
+                      <th>Nama Belakang</th>
+                      <th>Email</th>
                       <th>Level</th>
                       <th class="center-align">Active</th>
                       <th class="center-align">Last Login</th>
@@ -28,6 +30,8 @@
                   <?php $no = 0; foreach($users as $row): ?>
                     <tr>
                       <td><?php echo ++$no; ?></td>
+                      <td><?php echo $row->nama_depan; ?></td>
+                      <td><?php echo $row->nama_belakang; ?></td>
                       <td><?php echo $row->username; ?></td>
                       <td><?php echo $row->level; ?></td>
                       <td class="center-align"><?php echo $row->active; ?></td>

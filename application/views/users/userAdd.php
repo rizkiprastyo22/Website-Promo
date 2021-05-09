@@ -21,6 +21,14 @@
             </div>
           <?php endif; ?>
           <div class="input-field col s12 m6">
+              <input id="nama_depan" name="nama_depan" type="text" value="<?php echo set_value('nama_depan'); ?>">
+              <label for="nama_depan" class="">Nama Depan</label>
+          </div>
+          <div class="input-field col s12 m6">
+              <input id="nama_belakang" name="nama_belakang" type="text" value="<?php echo set_value('nama_belakang'); ?>">
+              <label for="nama_belakang" class="">Nama Belakang</label>
+          </div>
+          <div class="input-field col s12 m6">
               <input id="username" name="username" type="text" value="<?php echo set_value('username'); ?>">
               <label for="username" class="">Username</label>
           </div>
@@ -31,7 +39,8 @@
           <div class="input-field col s12 m6">
               <select id="level" name="level">
                   <option value="administrator">Administrator</option>
-                  <option value="alumni">Alumni</option>
+                  <option value="mitra">Mitra</option>
+                  <option value="pelanggan">Pelanggan</option>
               </select>
               <label>Pilih Level</label>
           </div>
