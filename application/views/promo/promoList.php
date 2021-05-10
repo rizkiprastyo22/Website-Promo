@@ -33,8 +33,8 @@
                     <tr>
                       <td><?php echo ++$no; ?></td>
                       <td><?php echo $row->promo; ?></td>
-                      <td class="center-align"><?php echo $harga_awal; ?></td>
-                      <td class="center-align"><?php echo $harga_promo; ?></td>
+                      <td class="center-align">Rp. <?php echo $harga_awal; ?></td>
+                      <td class="center-align">Rp. <?php echo $harga_promo; ?></td>
                       <td class="center-align">
                         <a href="<?php echo base_url('promo/edit/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Edit Data"><i class="material-icons">edit</i></a>
                         <a href="<?php echo base_url('promo/delete/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a>
