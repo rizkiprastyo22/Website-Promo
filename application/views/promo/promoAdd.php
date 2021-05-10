@@ -22,12 +22,12 @@
             </div>
           <?php endif; ?>
           <div class="input-field col s12 m6">
-              <input id="promo" name="promo" type="text" value="<?php echo set_value('promo'); ?>">
-              <label for="promo" class="">Promo</label>
-          </div>
-          <div class="input-field col s12 m6">
               <input id="mitra" name="mitra" type="text" value="<?php echo set_value('mitra'); ?>">
               <label for="mitra" class="">Mitra</label>
+          </div>
+          <div class="input-field col s12 m6">
+              <input id="promo" name="promo" type="text" value="<?php echo set_value('promo'); ?>">
+              <label for="promo" class="">Promo</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="harga_awal" name="harga_awal" type="number" value="<?php echo set_value('harga_awal'); ?>">
@@ -41,12 +41,20 @@
               <input id="deskripsi" name="deskripsi" type="text" value="<?php echo set_value('deskripsi'); ?>">
               <label for="deskripsi" class="">Deskripsi</label>
           </div>
-          <div class="input-field col s12 m6">
-              <!-- <label for="foto" class="">Foto</label> -->
-              <input id="foto" name="foto" type="file" accept="image/png, image/jpeg" value="<?php echo set_value('foto'); ?>">
+          <div class="input-field file-field col s12 m6">
+                <div class="btn">
+                  <span>Foto Makanan</span>
+                  <input type="file" name="foto">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
           </div>
+          <!-- <div class="input-field col s12 m6">
+              <input id="foto" name="foto" type="file" accept="image/png, image/jpeg" value="<?php echo set_value('foto'); ?>">
+          </div> -->
           <div class="input-field col s12 right-align">
-              <button type="submit" name="submit" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
+              <button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
       </div>

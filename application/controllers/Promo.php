@@ -31,7 +31,26 @@ class Promo extends MY_Controller {
   public function add()
   {
     // Jika form di submit jalankan blok kode ini
-    if ($this->input->post('submit')) {
+    if ($this->input->post('submit-promo')) {
+
+      // Jika foto diganti jalankan blok kode ini
+      if (!empty($_FILES['foto']['name'])) {
+        // Konfigurasi library upload codeigniter
+        $config['upload_path'] = './assets/images/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = 2000;
+        $config['file_name'] = $this->session->userdata('username').'_'.date('YmdHis');
+
+        // Load library upload
+        $this->load->library('upload', $config);
+        
+        // Jika terdapat error pada proses upload maka exit
+        if (!$this->upload->do_upload('foto')) {
+            exit($this->upload->display_errors());
+        }
+
+        $data['foto'] = $this->upload->data()['file_name'];
+      }
       
       // Mengatur validasi data promo,
       // # required = tidak boleh kosong

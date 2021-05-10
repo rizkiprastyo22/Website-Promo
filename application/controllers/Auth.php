@@ -26,6 +26,7 @@ class Auth extends CI_Controller
 
       // data user dalam bentuk array
       $userData = array(
+        'nama' => $query->nama,
         'username' => $query->username,
         'level' => $query->level,
         'logged_in' => TRUE
