@@ -35,73 +35,7 @@
 			<div class="row tm-gallery">
 				<!-- gallery page 1 -->
 				<div id="tm-gallery-page-promo" class="tm-gallery-page">
-					<article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Fusce dictum finibus</h3>
-								<h4 class="tm-gallery-description">Nom Nom Cafe</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.75.000</del><br>Rp.50.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Aliquam sagittis</h3>
-								<h4 class="tm-gallery-description">Nom Nom Cafe</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.90.000</del><br>Rp.80.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Sed varius turpis</h3>
-								<h4 class="tm-gallery-description">KOI Cafe</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.80.000</del><br>Rp.55.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Aliquam sagittis</h3>
-								<h4 class="tm-gallery-description">KOI Cafe</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.100.000</del><br>Rp.85.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Maecenas eget justo</h3>
-								<h4 class="tm-gallery-description">BAN BAN</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.125.000</del><br>Rp.115.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Quisque et felis eros</h3>
-								<h4 class="tm-gallery-description">BAN BAN</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.110.000</del><br>Rp.100.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
+					<article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -112,7 +46,7 @@
 							</figcaption>
 						</figure>
 					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
+					<article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -123,18 +57,7 @@
 							</figcaption>
 						</figure>
 					</article>
-                    <article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Sed ultricies dui</h3>
-								<h4 class="tm-gallery-description">Hokben</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.150.000</del><br>Rp.135.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -145,18 +68,7 @@
 							</figcaption>
 						</figure>
 					</article>
-                    <article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Sed ultricies dui</h3>
-								<h4 class="tm-gallery-description">Hokben</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.150.000</del><br>Rp.135.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -167,18 +79,7 @@
 							</figcaption>
 						</figure>
 					</article>
-                    <article class="col s12 m4 l3 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h3 class="tm-gallery-title">Sed ultricies dui</h3>
-								<h4 class="tm-gallery-description">Hokben</h4>
-								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.150.000</del><br>Rp.135.000</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -189,18 +90,51 @@
 							</figcaption>
 						</figure>
 					</article>
-                    <article class="col s12 m4 l3 tm-gallery-item">
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
-							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
-								<h3 class="tm-gallery-title">Sed ultricies dui</h3>
-								<h4 class="tm-gallery-description">Hokben</h4>
+								<h3 class="tm-gallery-title">Donec porta consequat</h3>
+								<h4 class="tm-gallery-description">Pizza Hut</h4>
 								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
-								<p class="tm-gallery-price"><del>Rp.150.000</del><br>Rp.135.000</p>
+								<p class="tm-gallery-price"><del>Rp.145.000</del><br>Rp.125.000</p>
 							</figcaption>
 						</figure>
 					</article>
-					<article class="col s12 m4 l3 tm-gallery-item">
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h3 class="tm-gallery-title">Donec porta consequat</h3>
+								<h4 class="tm-gallery-description">Pizza Hut</h4>
+								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
+								<p class="tm-gallery-price"><del>Rp.145.000</del><br>Rp.125.000</p>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h3 class="tm-gallery-title">Donec porta consequat</h3>
+								<h4 class="tm-gallery-description">Pizza Hut</h4>
+								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
+								<p class="tm-gallery-price"><del>Rp.145.000</del><br>Rp.125.000</p>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h3 class="tm-gallery-title">Donec porta consequat</h3>
+								<h4 class="tm-gallery-description">Pizza Hut</h4>
+								<!-- <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p> -->
+								<p class="tm-gallery-price"><del>Rp.145.000</del><br>Rp.125.000</p>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 							<figcaption>
@@ -212,4 +146,16 @@
 						</figure>
 					</article>
 				</div> <!-- gallery page 1 -->
+            
             </div>
+            <div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col s11 right-align">
+						<div class="tm-description-box"> 
+							<!-- <h4 class="tm-gallery-title">Maecenas nulla neque</h4>
+							<p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a rel="nofollow" href="https://templatemo.com/contact">talk to us</a> for additional permissions about our templates. Thank you.</p> -->
+							<a href="#" class="btn waves-effect waves-light btn-primary btn-pill red lighten-2">See more</a>
+						</div>
+					</div>
+				</div>
+			</div>

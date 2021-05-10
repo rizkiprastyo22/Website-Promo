@@ -83,6 +83,18 @@
           margin-bottom: 30px;
         }
 
+        .tm-section,
+        .tm-container-inner,
+        .tm-container-inner-2 {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .tm-description-box {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         .text-center {
           text-align: center;
         }
