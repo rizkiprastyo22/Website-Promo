@@ -61,12 +61,8 @@
                   </div>
                 <?php endif; ?>
                   <div class="input-field col m12">
-                    <input id="nama_depan" type="text" class="validate" name="nama_depan">
-                    <label for="nama_depan">Nama Depan</label>
-                  </div>
-                  <div class="input-field col m12">
-                    <input id="nama_belakang" type="text" class="validate" name="nama_belakang">
-                    <label for="nama_belakang">Nama Belakang</label>
+                    <input id="nama" type="text" class="validate" name="nama">
+                    <label for="nama">Nama Lengkap</label>
                   </div>
                   <div class="input-field col m12">
                     <input id="username" type="text" class="validate" name="username">

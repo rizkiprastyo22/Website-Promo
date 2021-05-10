@@ -3,8 +3,7 @@ USE hemat_warrior;
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nama_depan` varchar(50) NOT NULL,
-  `nama_belakang` varchar(50) NOT NULL,
+  `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `level` enum('mitra','pelanggan') NOT NULL DEFAULT 'pelanggan',

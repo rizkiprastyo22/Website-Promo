@@ -21,12 +21,8 @@
             </div>
           <?php endif; ?>
           <div class="input-field col s12 m6">
-              <input id="nama_depan" name="nama_depan" type="text" value="<?php echo set_value('nama_depan'); ?>">
-              <label for="nama_depan" class="">Nama Depan</label>
-          </div>
-          <div class="input-field col s12 m6">
-              <input id="nama_belakang" name="nama_belakang" type="text" value="<?php echo set_value('nama_belakang'); ?>">
-              <label for="nama_belakang" class="">Nama Belakang</label>
+              <input id="nama" name="nama" type="text" value="<?php echo set_value('nama'); ?>">
+              <label for="nama" class="">Nama Lengkap</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="username" name="username" type="text" value="<?php echo set_value('username'); ?>">

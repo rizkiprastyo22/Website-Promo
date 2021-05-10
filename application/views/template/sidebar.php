@@ -6,7 +6,7 @@
           <img src="<?php echo base_url('img/bg1.png'); ?>">
         </div>
         <a href="#!user"><img class="circle" src="<?php echo base_url('assets/images/noavatar.png'); ?>"></a>
-        <!-- <a href="#!name"><span class="black-text name">Hi <?php echo ucwords(strtolower($this->session->userdata('nama_depan'))); ?>!</span></a> -->
+        <!-- <a href="#!name"><span class="black-text name">Hi <?php echo ucwords(strtolower($this->session->userdata('nama'))); ?>!</span></a> -->
         <a href="#!username"><span class="black-text username"><?php echo (strtolower($this->session->userdata('username'))); ?></span></a>
       </div>
     </li>

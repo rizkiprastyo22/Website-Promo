@@ -80,13 +80,9 @@ class Auth extends CI_Controller
     // Jika form di submit jalankan blok kode ini
     if ($this->input->post('submit')) {
       
-      // Mengatur validasi data nama_depan,
+      // Mengatur validasi data nama,
       // required = tidak boleh kosong
-      $this->form_validation->set_rules('nama_depan', 'Nama Depan', 'required');
-
-      // Mengatur validasi data nama_belakang,
-      // required = tidak boleh kosong
-      $this->form_validation->set_rules('nama_belakang', 'Nama Belakang', 'required');
+      $this->form_validation->set_rules('nama', 'Nama Lengkap', 'required');
 
       // Mengatur validasi data username,
       // required = tidak boleh kosong
@@ -106,8 +102,7 @@ class Auth extends CI_Controller
       if ($this->form_validation->run() === TRUE) {
 
         $data = array(
-          'nama_depan' => $this->input->post('nama_depan'),
-          'nama_belakang' => $this->input->post('nama_belakang'),
+          'nama' => $this->input->post('nama'),
           'username' => $this->input->post('username'),
           'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
           'level' => 'alumni'
