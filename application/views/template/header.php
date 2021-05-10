@@ -158,7 +158,7 @@
 
         .tm-gallery-resto {
           margin-bottom: 20px;
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
 
         .tm-gallery-description {

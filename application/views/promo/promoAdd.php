@@ -27,7 +27,7 @@
           </div>
           <div class="input-field col s12 m6">
               <input id="mitra" name="mitra" type="text" value="<?php echo set_value('mitra'); ?>">
-              <label for="mitra" class="">mitra</label>
+              <label for="mitra" class="">Mitra</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="harga_awal" name="harga_awal" type="number" value="<?php echo set_value('harga_awal'); ?>">
