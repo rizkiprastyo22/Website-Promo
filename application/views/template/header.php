@@ -159,27 +159,27 @@
           font-size: 1rem;
         }
 
-        .col-lg-3,
-        .col-lg-4,
-        .col-lg-6,
-        .col-md-4,
-        .col-md-6,
-        .col-sm-6, 
-        .col-12 {
+        /* #col-lg-3,
+        #col-lg-4,
+        #col-lg-6,
+        #col-md-4,
+        #col-md-6,
+        #col-sm-6, 
+        #col-12 {
           position: relative;
           width: 100%;
           padding-right: 15px;
           padding-left: 15px;
         }
 
-        .col-12 {
+        #col-12 {
           -ms-flex: 0 0 100%;
           flex: 0 0 100%;
           max-width: 100%;
         }
 
         @media (min-width: 576px) {
-          .col-sm-6 {
+          #col-sm-6 {
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;
             max-width: 50%;
@@ -187,13 +187,13 @@
         }
 
         @media (min-width: 768px) {
-          .col-md-4 {
+          #col-md-4 {
             -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
             max-width: 33.333333%;
           }
           
-          .col-md-6 {
+          #col-md-6 {
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;
             max-width: 50%;
@@ -201,24 +201,24 @@
         }
 
         @media (min-width: 992px) {
-          .col-lg-3 {
+          #col-lg-3 {
             -ms-flex: 0 0 25%;
             flex: 0 0 25%;
             max-width: 25%;
           }
           
-          .col-lg-4 {
+          #col-lg-4 {
             -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
             max-width: 33.333333%;
           }
           
-          .col-lg-6 {
+          #col-lg-6 {
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;
             max-width: 50%;
           }
-        }
+        } */
       </style>
       
     </header>
