@@ -28,7 +28,7 @@
       
       <nav class="red lighten-4 navbar-fixed" role="navigation">
           <div class="nav-wrapper container">
-              <a id="logo-container" href="#" class="brand-logo center">
+              <a id="logo-container" href="<?php echo base_url('auth/login'); ?>" class="brand-logo center">
                 <img src="<?php echo base_url('img/logoku.png'); ?>" width="200" 
                 height="50" alt="Hemat Warrior">
               </a>

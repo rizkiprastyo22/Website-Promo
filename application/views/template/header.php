@@ -137,6 +137,7 @@
 
         .tm-gallery-item {
           max-width: 280px;
+          margin-bottom: 30px;
         }
 
         .img-fluid {
@@ -149,15 +150,20 @@
         }
 
         .tm-gallery-title {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           font-weight: 400;
           color: #1A6692;
           margin-bottom: 15px;
         }
 
+        .tm-gallery-resto {
+          margin-bottom: 20px;
+          font-size: 1.3rem;
+        }
+
         .tm-gallery-description {
           margin-bottom: 20px;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
 
         .tm-gallery-price {
