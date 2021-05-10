@@ -6,11 +6,15 @@ class Dashboard extends MY_Controller
   {
     parent::__construct();
     $this->cekLogin();
+
+    // Load model Promo
+    $this->load->model('model_promo');
   }
 
   public function index()
   {
     $data['pageTitle'] = 'Home';
+    $data['promo'] = $this->model_promo->get()->result();
     $data['pageContent'] = $this->load->view('dashboard/main', $data, TRUE);
 
     $this->load->view('template/layout', $data);

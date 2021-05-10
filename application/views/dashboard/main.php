@@ -35,21 +35,23 @@
 			<div class="row tm-gallery">
 				<!-- gallery page 1 -->
 				<div id="tm-gallery-page-promo" class="tm-gallery-page">
-					<article class="col s12 offset-s2 m4 l3 tm-gallery-item">
+				<?php $no = 0; foreach($promo as $row): ?>
+                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<!-- <a href=""> -->
 							<figure class="card">
 								<div class="card-image">
 									<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 									<figcaption class="container">
-										<h3 class="tm-gallery-title">Sed ultricies dui</h3>
+										<h3 class="tm-gallery-title"><?php echo $row->promo; ?></h3>
 										<h4 class="tm-gallery-resto">Hokben</h4>
-										<p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-										<p class="tm-gallery-price"><del>Rp.150.000</del><br>Rp.135.000</p><br>
+										<p class="tm-gallery-description"><?php echo $row->deskripsi; ?></p>
+										<p class="tm-gallery-price"><del><?php echo $row->harga_awal; ?></del><br><?php echo $row->harga_promo; ?></p><br>
 									</figcaption>
 								</div>
 							</figure>
 						<!-- </a> -->
 					</article>
+                <?php endforeach; ?>
 				</div> <!-- gallery page 1 -->
             
             </div>
