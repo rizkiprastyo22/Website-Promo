@@ -43,7 +43,7 @@
 						<!-- <a href=""> -->
 							<figure class="card">
 								<div class="card-image">
-									<img src="<?php echo $row->foto; ?>" alt="Image" class="img-fluid tm-gallery-img" />
+									<img src="<?php echo base64_encode($row->foto); ?>" alt="Image" class="img-fluid tm-gallery-img" />
 									<figcaption class="container">
 										<h3 class="tm-gallery-title"><?php echo $row->promo; ?></h3>
 										<h4 class="tm-gallery-resto"><?php echo $row->mitra; ?></h4>
