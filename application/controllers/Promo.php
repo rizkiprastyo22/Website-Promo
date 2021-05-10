@@ -21,7 +21,7 @@ class Promo extends MY_Controller {
   {
     // Data untuk page index
     $data['pageTitle'] = 'Promo';
-    $data['promo'] = $this->model_promo->get()->result();
+    $data['promo'] = $this->model_promo->get_where(array('mitra' => $this->session->userdata('nama')))->result();
     $data['pageContent'] = $this->load->view('promo/promoList', $data, TRUE);
 
     // Jalankan view template/layout

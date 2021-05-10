@@ -42,7 +42,7 @@
               <label for="deskripsi" class="">Deskripsi</label>
           </div>
           <div class="input-field file-field col s12 m6">
-                <div class="btn">
+                <div class="btn red lighten-2">
                   <span>Foto Makanan</span>
                   <input type="file" name="foto">
                 </div>
