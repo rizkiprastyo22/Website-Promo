@@ -26,6 +26,10 @@
               <label for="promo" class="">Promo</label>
           </div>
           <div class="input-field col s12 m6">
+              <input id="mitra" name="mitra" type="text" value="<?php echo set_value('mitra'); ?>">
+              <label for="mitra" class="">mitra</label>
+          </div>
+          <div class="input-field col s12 m6">
               <input id="harga_awal" name="harga_awal" type="number" value="<?php echo set_value('harga_awal'); ?>">
               <label for="harga_awal" class="">Harga Awal</label>
           </div>

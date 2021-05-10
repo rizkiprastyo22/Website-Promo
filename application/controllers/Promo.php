@@ -42,6 +42,11 @@ class Promo extends MY_Controller {
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
+      $this->form_validation->set_rules('mitra', 'Mitra', 'required');
+
+      // Mengatur validasi data password,
+      // # required = tidak boleh kosong
+      // # min_length[5] = password harus terdiri dari minimal 5 karakter
       $this->form_validation->set_rules('harga_awal', 'Harga Awal', 'required');
 
       // Mengatur validasi data password,
@@ -63,6 +68,7 @@ class Promo extends MY_Controller {
 
         $data = array(
           'promo' => $this->input->post('promo'),
+          'mitra' => $this->input->post('mitra'),
           'harga_awal' => $this->input->post('harga_awal'),
           'harga_promo' => $this->input->post('harga_promo'),
           'deskripsi' => $this->input->post('deskripsi'),

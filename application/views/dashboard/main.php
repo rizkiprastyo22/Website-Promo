@@ -43,7 +43,7 @@
 									<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
 									<figcaption class="container">
 										<h3 class="tm-gallery-title"><?php echo $row->promo; ?></h3>
-										<h4 class="tm-gallery-resto">Hokben</h4>
+										<h4 class="tm-gallery-resto"><?php echo $row->mitra; ?></h4>
 										<p class="tm-gallery-description"><?php echo $row->deskripsi; ?></p>
 										<p class="tm-gallery-price"><del><?php echo $row->harga_awal; ?></del><br><?php echo $row->harga_promo; ?></p><br>
 									</figcaption>

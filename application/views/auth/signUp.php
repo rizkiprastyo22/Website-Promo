@@ -77,7 +77,7 @@
                     </div>
                   <div class="input-field col m12 right-align">
                     <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
-                      Login
+                      Sign Up
                     </button>
                   </div>
                 </div>
