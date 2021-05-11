@@ -41,7 +41,7 @@
 					?>
                     <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
 						<!-- <a href=""> -->
-							<figure class="card">
+							<figure class="card light-blue lighten-4" style="min-height: 600px; max-height: 600px;">
 								<div class="card-image">
 									<img src="<?php echo base_url('assets/images/') . $row->foto; ; ?>" alt="Image" class="img-fluid tm-gallery-img" />
 									<figcaption class="container">

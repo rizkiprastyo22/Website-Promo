@@ -39,7 +39,7 @@
           </div>
           <div class="input-field col s12 m6">
               <input id="deskripsi" name="deskripsi" type="text" value="<?php echo set_value('deskripsi'); ?>">
-              <label for="deskripsi" class="">Deskripsi</label>
+              <label for="deskripsi" class="">Deskripsi Singkat (1 kalimat):</label>
           </div>
           <div class="input-field file-field col s12 m6">
                 <div class="btn red lighten-2">
@@ -51,7 +51,7 @@
                 </div>
           </div>
           <div class="col s12 m6 left-align">
-          Format Upload Gambar: <br>nama mitra_promo_foto keberapa <br>(Misal: Hemat Warrior_Nasi Gulai_7)
+            Format Upload Gambar (tanpa spasi): <br><span style="color:blue;">KodeMitra_InisialPromo_FotoKeberapa</span><br>(Misal: HW_NG_8)
           </div>
           <div class="input-field col s12 right-align">
               <button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
