@@ -24,30 +24,53 @@ class Profile extends MY_Controller {
         $config['upload_path'] = './assets/images/';
         $config['allowed_types'] = 'gif|jpg|png';
         $config['max_size'] = 2000;
-        $config['file_name'] = $this->session->userdata('username').'_'.date('YmdHis');
+        $config['file_name'] = $this->input->post('avatar');
 
         // Load library upload
         $this->load->library('upload', $config);
         
         // Jika terdapat error pada proses upload maka exit
-        if (!$this->upload->do_upload('avatar')) {
+        if (!$this->upload->do_upload('avatar2')) {
             exit($this->upload->display_errors());
         }
 
-        $data['avatar'] = $this->upload->data()['file_name'];
+        $data['avatar2'] = $this->upload->data()['file_name'];
       }
+
+      // Mengatur validasi data nama,
+      // # required = tidak boleh kosong
+      $this->form_validation->set_rules('nama', 'Nama', 'required');
+
+      // Mengatur validasi data alamat,
+      // # required = tidak boleh kosong
+      // $this->form_validation->set_rules('alamat', 'Alamat', 'required');
+
+      // Mengatur validasi data telepon,
+      // # required = tidak boleh kosong
+      // $this->form_validation->set_rules('telp', 'Telepon', 'required');
+
+      // Mengatur pesan error validasi data
+      $this->form_validation->set_message('required', '%s tidak boleh kosong!');
 
       // Jalankan validasi jika semuanya benar maka lanjutkan
 			if ($this->form_validation->run() === TRUE) {
 
+        $data = array(
+          'nama' => $this->input->post('nama'),
+          'avatar' => $this->input->post('avatar')
+        );
+
         // Ambil user ID dari session
         $userId = $this->session->userdata('id');
+
+        // Jalankan function update pada model_users
+        $query = $this->model_users->update($userId, $data);
 
         // cek jika query berhasil
         if ($query) {
 
           // Set success message
-          $message = array('status' => true, 'message' => 'Berhasil memperbarui profil');
+          $message = array('status' => true, 'message' => 'Berhasil memperbarui profile');
           
           // Update session baru
           $this->session->set_userdata($data);
@@ -55,7 +78,7 @@ class Profile extends MY_Controller {
         } else {
 
           // Set error message
-          $message = array('status' => false, 'message' => 'Gagal memperbarui profil');
+          $message = array('status' => false, 'message' => 'Gagal memperbarui profile');
 
         }
 
@@ -93,9 +116,11 @@ class Profile extends MY_Controller {
       // Jalankan validasi jika semuanya benar maka lanjutkan
 			if ($this->form_validation->run() === TRUE) {
 
-        $data = array(
-          'password' => password_hash($this->input->post('konfirmasi_password'), PASSWORD_DEFAULT)
-        );
+        $data['password'] = password_hash($this->input->post('konfirmasi_password'), PASSWORD_DEFAULT);
+
+        // $data = array(
+        //   'password' => password_hash($this->input->post('konfirmasi_password'), PASSWORD_DEFAULT)
+        // );
 
         // Ambil user ID
         $userId = $this->session->userdata('id');
@@ -112,7 +137,7 @@ class Profile extends MY_Controller {
         } else {
 
           // Set error message
-          $message = array('status' => false, 'message' => 'Gagal memperbarui profil');
+          $message = array('status' => false, 'message' => 'Gagal memperbarui profile');
 
         }
 
@@ -126,7 +151,7 @@ class Profile extends MY_Controller {
     }
 
     // Data untuk page profile
-    $data['pageTitle'] = 'Profil';
+    $data['pageTitle'] = 'Profile';
     $data['pageContent'] = $this->load->view('profile/profile', $data, TRUE);
 
     // Jalankan view template/layout
@@ -139,7 +164,7 @@ class Profile extends MY_Controller {
     $userId = $this->session->userdata('id');
     
     // Ambil data password_lama dari POST
-    $password = password_hash($this->input->post('password_lama'), PASSWORD_DEFAULT);
+    $password = $this->input->post('password_lama');
 
     // Jalankan function cekPasswordLama pada model_users
     $query = $this->model_users->cekPasswordLama($userId, $password);

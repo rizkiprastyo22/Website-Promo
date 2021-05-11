@@ -8,8 +8,8 @@
         <div class="row">
           <div class="col s12">
             <ul class="tabs tabs-fixed-width">
-              <li class="tab col s3"><a class="active" href="#basic-tab">Ubah Foto Profil</a></li>
-              <li class="tab col s3"><a href="#password-tab">Ubah Password</a></li>
+              <li class="tab col s3 disabled"><a href="#basic-tab">Ubah Profil</a></li>
+              <li class="tab col s3"><a class="active" href="#password-tab">Ubah Password</a></li>
             </ul>
           </div>
           <div id="basic-tab" class="col s12">
@@ -28,21 +28,32 @@
                   </div>
                 </div>
               <?php endif; ?>
+              <div class="input-field col s12 m6">
+                  <input disabled id="nama" name="nama" type="text" value="<?php echo $this->session->userdata('nama'); ?>">
+                  <label for="nama" class="">Nama</label>
+              </div>
+              <!-- <div class="input-field col s12 m6">
+                  <input id="alamat" name="alamat" type="text" value="<?php echo $this->session->userdata('alamat'); ?>">
+                  <label for="alamat" class="">Contact Person</label>
+              </div> -->
               <div class="input-field file-field col s12 m6">
-                <div class="btn red lighten-2">
-                  <span>Upload Foto</span>
-                  <input type="file" name="avatar">
-                </div>
+                <!-- <div class="btn red lighten-2">
+                  <span>Upload Avatar</span>
+                  <input type="file" name="avatar2">
+                </div> -->
                 <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
+                  <!-- <input class="file-path validate" name="foto" type="text" accept="image/png, image/jpeg" value="<?php echo set_value('avatar'); ?>"> -->
                 </div>
               </div>
+              <!-- <div class="input-field col s12 m6">
+                  <input id="telp" name="telp" type="number" value="<?php echo $this->session->userdata('telp'); ?>">
+                  <label for="telp" class="">No. Telepon</label>
+              </div> -->
               <div class="input-field col s12 right-align">
-                  <button type="submit" name="submit-information" value="true" class="btn amber waves-effect waves-green">Simpan</button>
+                  <!-- <button type="submit" name="submit-information" value="true" class="btn amber waves-effect waves-green">Simpan</button> -->
               </div>
             </form>
           </div>
-          
           <div id="password-tab" class="col s12">
             <form class="row" id="password-form" method="post" action="" style="margin-top: 20px;">
               <?php if(validation_errors()): ?>
@@ -59,10 +70,10 @@
                   </div>
                 </div>
               <?php endif; ?>
-              <div class="input-field col s12">
+              <!-- <div class="input-field col s12">
                   <input id="password_lama" name="password_lama" type="password">
                   <label for="password_lama" class="">Password Lama</label>
-              </div>
+              </div> -->
               <div class="input-field col s12">
                   <input id="password_baru" name="password_baru" type="password">
                   <label for="password_baru" class="">Password Baru</label>
@@ -72,7 +83,7 @@
                   <label for="konfirmasi_password" class="">Konfirmasi Password</label>
               </div>
               <div class="input-field col s12 right-align">
-                  <button type="submit" name="submit-password" value="true" class="btn amber waves-effect waves-green">Simpan</button>
+                  <button type="submit" name="submit-password" value="true" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
               </div>
             </form>
           </div>
