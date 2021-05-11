@@ -32,25 +32,6 @@ class Promo extends MY_Controller {
   {
     // Jika form di submit jalankan blok kode ini
     if ($this->input->post('submit-promo')) {
-
-      // Jika foto diganti jalankan blok kode ini
-      if (!empty($_FILES['foto']['name'])) {
-        // Konfigurasi library upload codeigniter
-        $config['upload_path'] = './assets/images/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size'] = 2000;
-        $config['file_name'] = $this->session->userdata('username').'_'.date('YmdHis');
-
-        // Load library upload
-        $this->load->library('upload', $config);
-        
-        // Jika terdapat error pada proses upload maka exit
-        if (!$this->upload->do_upload('foto')) {
-            exit($this->upload->display_errors());
-        }
-
-        $data['foto'] = $this->upload->data()['file_name'];
-      }
       
       // Mengatur validasi data promo,
       // # required = tidak boleh kosong
@@ -81,6 +62,26 @@ class Promo extends MY_Controller {
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
       $this->form_validation->set_message('min_length', '%s minimal %d karakter!');
+
+      // Jika foto diganti jalankan blok kode ini
+      if (!empty($_FILES['foto2']['name'])) {
+        // Konfigurasi library upload codeigniter
+        $config['upload_path'] = './assets/images/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = 2000;
+        $config['file_name'] = $this->input->post('foto');
+
+        // Load library upload
+        $this->load->library('upload', $config);
+        
+        // Jika terdapat error pada proses upload maka exit
+        if ( ! $this->upload->do_upload('foto2')) {
+            exit($this->upload->display_errors());
+        }
+        else{
+          $data['foto2'] = $this->upload->data()['file_name'];
+        }
+      }
 
       // Jalankan validasi jika semuanya benar maka lanjutkan
       if ($this->form_validation->run() === TRUE) {
@@ -120,7 +121,7 @@ class Promo extends MY_Controller {
   public function edit($id = null)
   {
     // Jika form di submit jalankan blok kode ini
-    if ($this->input->post('submit')) {
+    if ($this->input->post('submit-promo')) {
       
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
@@ -140,6 +141,26 @@ class Promo extends MY_Controller {
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
       $this->form_validation->set_message('min_length', '%s minimal %d karakter!');
+
+      // Jika foto diganti jalankan blok kode ini
+      if (!empty($_FILES['foto2']['name'])) {
+        // Konfigurasi library upload codeigniter
+        $config['upload_path'] = './assets/images/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = 2000;
+        $config['file_name'] = $this->input->post('foto');
+
+        // Load library upload
+        $this->load->library('upload', $config);
+        
+        // Jika terdapat error pada proses upload maka exit
+        if (!$this->upload->do_upload('foto2')) {
+            exit($this->upload->display_errors());
+        }
+        else{
+          $data['foto2'] = $this->upload->data()['file_name'];
+        }
+      }
 
       // Jalankan validasi jika semuanya benar maka lanjutkan
       if ($this->form_validation->run() === TRUE) {

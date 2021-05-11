@@ -6,7 +6,7 @@
         <span class="card-title"><?php echo $pageTitle; ?></span>
       </div>
       <div class="card-content">
-        <form class="row" id="edit-promo-form" method="post" action="">
+        <form class="row" id="edit-promo-form" method="post" action="" enctype="multipart/form-data">
           <?php if(validation_errors()): ?>
             <div class="col s12">
               <div class="card-panel red">
@@ -44,10 +44,10 @@
           <div class="input-field file-field col s12 m6">
                 <div class="btn red lighten-2">
                   <span>Foto Makanan</span>
-                  <input type="file" name="foto">
+                  <input type="file" name="foto2">
                 </div>
                 <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text" value="<?php echo $promo->foto; ?>">
+                  <input class="file-path validate" name="foto" type="text" accept="image/png, image/jpeg" value="<?php echo $promo->foto; ?>">
                 </div>
           </div>
           <div class="input-field col s12 right-align">
