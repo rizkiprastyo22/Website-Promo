@@ -6,7 +6,7 @@ CREATE TABLE `users` (
   `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `level` enum('mitra','pelanggan') NOT NULL DEFAULT 'pelanggan',
+  `level` enum('mitra','pelanggan','administrator') NOT NULL DEFAULT 'pelanggan',
   `last_login` datetime NOT NULL,
   `active` enum('0','1') NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)

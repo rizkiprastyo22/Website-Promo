@@ -1,5 +1,5 @@
 <aside>
-  <ul id="sidenav" class="side-nav fixed">
+  <ul id="sidenav" class="side-nav fixed light blue lighten-4">
     <li>
       <div class="userView">
         <div class="background">

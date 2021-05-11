@@ -32,7 +32,7 @@
 			</div> -->
 
         <!-- Gallery -->
-			<div class="row tm-gallery" style="background-image: url('<?php echo base_url('img/bg1.png'); ?>');"><br>
+			<div class="row tm-gallery"><br>
 				<!-- gallery page 1 -->
 				<div id="tm-gallery-page-promo" class="tm-gallery-page container">
 				<?php $no = 0; foreach($promo as $row): 

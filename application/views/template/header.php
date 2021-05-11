@@ -11,20 +11,8 @@
     <link href="<?php echo base_url('assets/materialize/css/materialize.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="<?php echo base_url('assets/css/kcdev.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!-- <link href="<?php echo base_url('css/templatemo-style.css'); ?>" type="text/css" rel="stylesheet" media="screen,projection"/> -->
-  </head>
-  <body>
-  <header>
-      
-      <nav class="red lighten-4 navbar-fixed" role="navigation">
-          <div class="nav-wrapper container">
-              <a id="logo-container" href="<?php echo base_url('dashboard'); ?>" class="brand-logo center">
-                <img src="<?php echo base_url('img/logoku.png'); ?>" width="200" 
-                height="40">
-              </a>
-              <a href="#" data-activates="sidenav" class="button-collapse"><i class="material-icons">menu</i></a>
-          </div>
-      </nav>
-      <style>
+
+    <style>
         body {
           display: flex;
           min-height: 100vh;
@@ -237,6 +225,21 @@
             max-width: 50%;
           }
         } */
+
+        body {  background-image: url('<?php echo base_url('img/bg1.png'); ?>'); } 
       </style>
+  </head>
+  <body>
+  <header>
       
-    </header>
+      <nav class="red lighten-4 navbar-fixed" role="navigation">
+          <div class="nav-wrapper container">
+              <a id="logo-container" href="<?php echo base_url('dashboard'); ?>" class="brand-logo center">
+                <img src="<?php echo base_url('img/logoku.png'); ?>" width="200" 
+                height="40">
+              </a>
+              <a href="#" data-activates="sidenav" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+      </nav>
+
+  </header>
