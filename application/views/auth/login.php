@@ -20,7 +20,7 @@
       .login-box {
         margin-top: 5%;
       }
-      .tab {overflow-x: hidden!important;}
+      .tab {overflow-x: hidden;}
       .example::-webkit-scrollbar {
         display: none;
       }
