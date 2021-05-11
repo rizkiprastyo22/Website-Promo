@@ -22,10 +22,11 @@ INSERT INTO `users` VALUES ('2', 'Hemat Warrior', 'admin@hematwarrior.id', '$2y$
 CREATE TABLE `promo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `promo` varchar(100) NOT NULL,
+  `mitra` varchar(100) NOT NULL,
   `harga_awal` int(11) NOT NULL,
   `harga_promo` int(11) NOT NULL,
   `deskripsi` varchar(5000) NOT NULL,
-  -- `foto` blob,
+  `foto` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 

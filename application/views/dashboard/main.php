@@ -1,6 +1,6 @@
     <!-- Top box -->
 		<!-- Logo & Site Name -->
-		<div class="placeholder">
+		<!-- <div class="placeholder">
 			<div class="parallax-window" data-parallax="scroll" style="background-image: url('<?php echo base_url('img/bg1.png'); ?>');">
 				<div class="tm-header">
 					<div class="row tm-header-inner">
@@ -14,7 +14,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
         <div>
             <h2 class="col-12 text-center tm-section-title">Temukan promo untukmu disini!</h2>
@@ -32,9 +32,9 @@
 			</div> -->
 
         <!-- Gallery -->
-			<div class="row tm-gallery">
+			<div class="row tm-gallery" style="background-image: url('<?php echo base_url('img/bg1.png'); ?>');"><br>
 				<!-- gallery page 1 -->
-				<div id="tm-gallery-page-promo" class="tm-gallery-page">
+				<div id="tm-gallery-page-promo" class="tm-gallery-page container">
 				<?php $no = 0; foreach($promo as $row): 
 					$harga_awal = number_format($row->harga_awal);
 					$harga_promo = number_format($row->harga_promo);
@@ -56,16 +56,15 @@
 					</article>
                 <?php endforeach; ?>
 				</div> <!-- gallery page 1 -->
-            
-            </div>
-            <div class="tm-section tm-container-inner">
-				<div class="row">
-					<div class="col s11 right-align">
-						<div class="tm-description-box"> 
-							<!-- <h4 class="tm-gallery-title">Maecenas nulla neque</h4>
-							<p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a rel="nofollow" href="https://templatemo.com/contact">talk to us</a> for additional permissions about our templates. Thank you.</p> -->
-							<a href="#" class="btn waves-effect waves-light btn-primary btn-pill red lighten-2">See more</a>
+				<div class="tm-section tm-container-inner">
+					<div class="row">
+						<div class="col s11 right-align">
+							<div class="tm-description-box"> 
+								<!-- <h4 class="tm-gallery-title">Maecenas nulla neque</h4>
+								<p class="tm-mb-45">Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a rel="nofollow" href="https://templatemo.com/contact">talk to us</a> for additional permissions about our templates. Thank you.</p> -->
+								<a href="#" class="btn waves-effect waves-light btn-primary btn-pill red lighten-2">See more</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+            </div>
