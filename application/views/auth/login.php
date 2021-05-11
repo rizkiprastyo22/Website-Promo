@@ -18,9 +18,9 @@
         flex: 1 0 auto;
       }
       .login-box {
-        margin-top: 7%;
+        margin-top: 5%;
       }
-      .tab {overflow-x: hidden;}
+      .tab {overflow-x: hidden!important;}
       .example::-webkit-scrollbar {
         display: none;
       }
