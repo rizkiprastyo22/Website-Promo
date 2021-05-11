@@ -48,7 +48,11 @@
       <li>
         <div class="divider"></div>
       </li>
-    <?php endif; ?>
+    <?php endif; ?><br>
+
+    <li>
+      <a class="waves-effect" href="<?php echo base_url('profile'); ?>"><i class="material-icons">person</i>Profil</a>
+    </li>
 
     <li>
       <a class="waves-effect"  href="<?php echo base_url('auth/logout'); ?>"><i class="material-icons">exit_to_app</i>Logout</a>
