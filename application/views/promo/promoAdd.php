@@ -50,9 +50,9 @@
                   <input class="file-path validate" name="foto" type="text" accept="image/png, image/jpeg" value="<?php echo set_value('foto'); ?>">
                 </div>
           </div>
-          <!-- <div class="input-field col s12 m6">
-              <input id="foto" name="foto" type="file" accept="image/png, image/jpeg" value="<?php echo set_value('foto'); ?>">
-          </div> -->
+          <div class="col s12 m6 left-align">
+          Format Upload Gambar: <br>nama mitra_promo_foto keberapa <br>(Misal: Hemat Warrior_Nasi Gulai_7)
+          </div>
           <div class="input-field col s12 right-align">
               <button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>

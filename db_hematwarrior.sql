@@ -30,6 +30,6 @@ CREATE TABLE `promo` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
--- Records of alumni
+-- Records of pelanggan
 -- ----------------------------
 INSERT INTO `promo` VALUES ('1', 'Fusce dictum finibus', 75000, 50000, 'Makanan enak lah pokoknya');

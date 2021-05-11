@@ -50,6 +50,9 @@
                   <input class="file-path validate" name="foto" type="text" accept="image/png, image/jpeg" value="<?php echo $promo->foto; ?>">
                 </div>
           </div>
+          <div class="col s12 m6 left-align">
+            Format Upload Gambar: <br><span style="color:blue;">nama mitra_promo_foto keberapa</span><br>(Misal: Hemat Warrior_Nasi Gulai_8)<br><span style="color:red;">*nilai foto keberapa harus +1 dari file sebelumnya</span>
+          </div>
           <div class="input-field col s12 right-align">
               <button type="submit" name="submit-promo" value="<?php echo $promo->id; ?>" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>

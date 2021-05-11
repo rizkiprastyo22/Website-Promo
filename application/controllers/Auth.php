@@ -106,7 +106,7 @@ class Auth extends CI_Controller
           'nama' => $this->input->post('nama'),
           'username' => $this->input->post('username'),
           'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
-          'level' => 'alumni'
+          'level' => 'pelanggan'
         );
 
         // Jalankan function insert pada model_users
