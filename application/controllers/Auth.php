@@ -94,11 +94,22 @@ class Auth extends CI_Controller
       // required = tidak boleh kosong
       // callback_cekAkun = menjalankan function cekAkun()
       $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
+
+      // Mengatur validasi data konfirmasi_password,
+      // # required = tidak boleh kosong
+      // # matches = nilai konfirmasi_password harus sama dengan password_baru
+      $this->form_validation->set_rules('konfirmasi_password', 'Konfirmasi password', 'required|matches[password]');
+
+      // Mengatur validasi data password,
+      // required = tidak boleh kosong
+      // callback_cekAkun = menjalankan function cekAkun()
+      $this->form_validation->set_rules('aggreement', 'Persetujuan syarat dan ketentuan', 'required');
 			
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
       $this->form_validation->set_message('min_length', '%s minimal %d karakter!');
       $this->form_validation->set_message('is_unique', '%s sudah terdaftar!');
+      $this->form_validation->set_message('matches', '{field} tidak sama dengan {param}.');
 
       // Jalankan validasi jika semuanya benar maka lanjutkan
       if ($this->form_validation->run() === TRUE) {
@@ -121,12 +132,12 @@ class Auth extends CI_Controller
         $this->session->set_flashdata('message', $message);
 
         // refresh page
-        redirect('auth/login/#password-tab', 'refresh');
+        redirect('auth/login', 'refresh');
       }
     }
 
     // Jalankan view auth/login.php
-    $this->load->view('auth/login/#password-tab');
+    $this->load->view('auth/login');
   }
     
   public function logout()

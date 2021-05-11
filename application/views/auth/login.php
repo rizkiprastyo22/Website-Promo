@@ -62,6 +62,13 @@
                         </div>
                       </div>
                       <?php endif; ?>
+                      <?php if($message = $this->session->flashdata('message')): ?>
+                      <div class="col s12">
+                        <div class="card-panel <?php echo ($message['status']) ? 'green' : 'red'; ?>">
+                          <span class="white-text"><?php echo $message['message']; ?></span>
+                        </div>
+                      </div>
+                    <?php endif; ?>
                       <div class="input-field col m12">
                         <input id="username" type="text" class="validate" name="username">
                         <label for="username">Email</label>
@@ -83,7 +90,7 @@
                 </div>
 
                 <div id="password-tab" class="col s12">
-                  <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/signup'); ?>" href="#password-tab">
+                  <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/signup'); ?>">
                     <div class="row">
                     <?php if(validation_errors()): ?>
                       <div class="col s12">
@@ -109,13 +116,21 @@
                       </div>
                       <div class="input-field col m12">
                         <input id="password" type="password" class="validate" name="password">
-                        <label for="password" data-error="Password yang anda masukkan salah">Password</label>
+                        <label for="password">Password</label>
+                      </div>
+                      <div class="input-field col m12">
+                        <input id="konfirmasi_password" type="password" class="validate" name="konfirmasi_password">
+                        <label for="konfirmasi_password">Konfirmasi Password</label>
+                      </div>
+                      <div class="input-field col m12">
+                        <input id="aggreement" type="checkbox" class="validate" name="aggreement">
+                        <label for="aggreement">Saya telah membaca dan menyetujui <a href="#">Syarat dan Ketentuan yang berlaku di Hemat Warrior</a></label>
                       </div>
                       <!-- <div class="input-field col m12 left-align">
                             Sudah punya akun? Silakan <a href="#basic-tab">login</a>
                         </div> -->
                       <div class="input-field col m12 right-align">
-                        <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
+                        <br><br><button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
                           Sign Up
                         </button>
                       </div>
