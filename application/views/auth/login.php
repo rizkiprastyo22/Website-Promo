@@ -70,9 +70,9 @@
                         <input id="password" type="password" class="validate" name="password">
                         <label for="password" data-error="Password yang anda masukkan salah">Password</label>
                       </div>
-                      <div class="input-field col m12 left-align">
-                            Belum punya akun? <a href="<?php echo base_url('auth/signup'); ?>">Daftar Sekarang!</a>
-                        </div>
+                      <!-- <div class="input-field col m12 left-align">
+                            Belum punya akun? <a href="#password-tab">Daftar Sekarang!</a>
+                        </div> -->
                       <div class="input-field col m12 right-align">
                         <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
                           Login
@@ -111,9 +111,9 @@
                         <input id="password" type="password" class="validate" name="password">
                         <label for="password" data-error="Password yang anda masukkan salah">Password</label>
                       </div>
-                      <div class="input-field col m12 left-align">
-                            Sudah punya akun? Silakan <a href="<?php echo base_url('auth/login'); ?>">login</a>
-                        </div>
+                      <!-- <div class="input-field col m12 left-align">
+                            Sudah punya akun? Silakan <a href="#basic-tab">login</a>
+                        </div> -->
                       <div class="input-field col m12 right-align">
                         <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
                           Sign Up
