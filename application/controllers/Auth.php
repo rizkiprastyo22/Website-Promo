@@ -120,12 +120,12 @@ class Auth extends CI_Controller
         $this->session->set_flashdata('message', $message);
 
         // refresh page
-        redirect('auth/signup', 'refresh');
+        redirect('auth/login/#password-tab', 'refresh');
       }
     }
 
     // Jalankan view auth/login.php
-    $this->load->view('auth/signup');
+    $this->load->view('auth/login/#password-tab');
   }
     
   public function logout()

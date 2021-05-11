@@ -20,6 +20,10 @@
       .login-box {
         margin-top: 7%;
       }
+      .tab {overflow-x: hidden;}
+      .example::-webkit-scrollbar {
+        display: none;
+      }
     </style>
   </head>
 
@@ -41,35 +45,83 @@
       <div class="container login-box">
         <div class="card z-depth-5">
           <div class="card-content">
-            <span class="card-title">Login</span>
-            <div class="row">
-              <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/login'); ?>">
-                <div class="row">
-                  <?php if(validation_errors()): ?>
-                  <div class="col s12">
-                    <div class="card-panel red">
-                      <span class="white-text"><?php echo validation_errors('<p>', '</p>'); ?></span>
-                    </div>
-                  </div>
-                  <?php endif; ?>
-                  <div class="input-field col m12">
-                    <input id="username" type="text" class="validate" name="username">
-                    <label for="username">Email</label>
-                  </div>
-                  <div class="input-field col m12">
-                    <input id="password" type="password" class="validate" name="password">
-                    <label for="password" data-error="Password yang anda masukkan salah">Password</label>
-                  </div>
-                  <div class="input-field col m12 left-align">
-                        Belum punya akun? <a href="<?php echo base_url('auth/signup'); ?>">Daftar Sekarang!</a>
-                    </div>
-                  <div class="input-field col m12 right-align">
-                    <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
-                      Login
-                    </button>
-                  </div>
+              <div class="row">
+                <div class="col s12">
+                  <ul class="tabs tabs-fixed-width">
+                    <li class="tab col s3"><a href="#basic-tab">Login</a></li>
+                    <li class="tab col s3"><a href="#password-tab">Sign Up</a></li>
+                  </ul>
                 </div>
-              </form>
+                <div id="basic-tab" class="col s12">
+                  <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/login'); ?>">
+                    <div class="row">
+                      <?php if(validation_errors()): ?>
+                      <div class="col s12">
+                        <div class="card-panel red">
+                          <span class="white-text"><?php echo validation_errors('<p>', '</p>'); ?></span>
+                        </div>
+                      </div>
+                      <?php endif; ?>
+                      <div class="input-field col m12">
+                        <input id="username" type="text" class="validate" name="username">
+                        <label for="username">Email</label>
+                      </div>
+                      <div class="input-field col m12">
+                        <input id="password" type="password" class="validate" name="password">
+                        <label for="password" data-error="Password yang anda masukkan salah">Password</label>
+                      </div>
+                      <div class="input-field col m12 left-align">
+                            Belum punya akun? <a href="<?php echo base_url('auth/signup'); ?>">Daftar Sekarang!</a>
+                        </div>
+                      <div class="input-field col m12 right-align">
+                        <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
+                          Login
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div id="password-tab" class="col s12">
+                  <form class="col s12" id="login-form" method="post" action="<?php echo base_url('auth/signup'); ?>" href="#password-tab">
+                    <div class="row">
+                    <?php if(validation_errors()): ?>
+                      <div class="col s12">
+                        <div class="card-panel red">
+                          <span class="white-text"><?php echo validation_errors('<p>', '</p>'); ?></span>
+                        </div>
+                      </div>
+                    <?php endif; ?>
+                    <?php if($message = $this->session->flashdata('message')): ?>
+                      <div class="col s12">
+                        <div class="card-panel <?php echo ($message['status']) ? 'green' : 'red'; ?>">
+                          <span class="white-text"><?php echo $message['message']; ?></span>
+                        </div>
+                      </div>
+                    <?php endif; ?>
+                      <div class="input-field col m12">
+                        <input id="nama" type="text" class="validate" name="nama">
+                        <label for="nama">Nama Lengkap</label>
+                      </div>
+                      <div class="input-field col m12">
+                        <input id="username" type="text" class="validate" name="username">
+                        <label for="username">Email</label>
+                      </div>
+                      <div class="input-field col m12">
+                        <input id="password" type="password" class="validate" name="password">
+                        <label for="password" data-error="Password yang anda masukkan salah">Password</label>
+                      </div>
+                      <div class="input-field col m12 left-align">
+                            Sudah punya akun? Silakan <a href="<?php echo base_url('auth/login'); ?>">login</a>
+                        </div>
+                      <div class="input-field col m12 right-align">
+                        <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
+                          Sign Up
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
             </div>
           </div>
         </div>
