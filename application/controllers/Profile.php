@@ -151,7 +151,7 @@ class Profile extends MY_Controller {
     }
 
     // Data untuk page profile
-    $data['pageTitle'] = 'Profile';
+    $data['pageTitle'] = 'Profil Akun';
     $data['pageContent'] = $this->load->view('profile/profile', $data, TRUE);
 
     // Jalankan view template/layout

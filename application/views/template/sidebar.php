@@ -23,9 +23,9 @@
     </li>
 
     <?php if($this->session->userdata('level') === 'mitra'): ?>
-      <li>
+      <!-- <li>
         <a class="subheader">Mitra</a>
-      </li>
+      </li> -->
       
       <li>
         <a class="waves-effect" href="<?php echo base_url('promo'); ?>"><i class="material-icons">people</i>Promo</a>
@@ -37,22 +37,28 @@
     <?php endif; ?>
 
     <?php if($this->session->userdata('level') === 'administrator'): ?>
-      <li>
+      <!-- <li>
         <a class="subheader">Admin</a>
-      </li>
+      </li> -->
       
       <li>
-        <a class="waves-effect" href="<?php echo base_url('users'); ?>"><i class="material-icons">people</i>Users</a>
+        <a class="waves-effect" href="<?php echo base_url('users'); ?>"><i class="material-icons">people</i>Mitra</a>
       </li>
       
       <li>
         <div class="divider"></div>
-      </li>
-    <?php endif; ?><br>
+      </li><br>
+    <?php endif; ?>
 
-    <li>
-      <a class="waves-effect" href="<?php echo base_url('profile'); ?>"><i class="material-icons">person</i>Profil</a>
-    </li>
+    <?php if($this->session->userdata('level') !== 'administrator'): ?>
+      <li>
+        <a class="waves-effect" href="<?php echo base_url('profile'); ?>"><i class="material-icons">person</i>Profil</a>
+      </li>
+
+      <li>
+          <div class="divider"></div>
+        </li>
+    <?php endif; ?>
 
     <li>
       <a class="waves-effect"  href="<?php echo base_url('auth/logout'); ?>"><i class="material-icons">exit_to_app</i>Logout</a>

@@ -21,7 +21,7 @@ class Users extends MY_Controller {
   {
     // Data untuk page index
     $data['pageTitle'] = 'Users';
-    $data['users'] = $this->model_users->get()->result();
+    $data['users'] = $this->model_users->get_where(array('level' => 'mitra'))->result();
     $data['pageContent'] = $this->load->view('users/userList', $data, TRUE);
 
     // Jalankan view template/layout
@@ -118,13 +118,13 @@ class Users extends MY_Controller {
       // Mengatur validasi data password,
       // # required = tidak boleh kosong
       // # min_length[5] = password harus terdiri dari minimal 5 karakter
-      $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
+      // $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
 
       // Mengatur validasi data level,
       // # required = tidak boleh kosong
       // # in_list[administrator, pelanggan, mitra] = hanya boleh bernilai 
       //   salah satu di antara administrator, pelanggan, atau mitra
-      $this->form_validation->set_rules('level', 'Level', 'required|in_list[administrator,pelanggan,mitra]');
+      // $this->form_validation->set_rules('level', 'Level', 'required|in_list[administrator,pelanggan,mitra]');
 
       // Mengatur validasi data active,
       // # required = tidak boleh kosong
@@ -141,8 +141,8 @@ class Users extends MY_Controller {
 
         $data = array(
           'nama' => $this->input->post('nama'),
-          'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
-          'level' => $this->input->post('level'),
+          // 'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
+          // 'level' => $this->input->post('level'),
           'active' => $this->input->post('active')
         );
 

@@ -28,12 +28,12 @@
               <input id="username" disabled name="username" type="text" value="<?php echo $user->username; ?>">
               <label for="username" class="">Email</label>
           </div>
-          <div class="input-field col s12 m6">
+          <!-- <div class="input-field col s12 m6">
               <input id="password" name="password" type="password" value="">
               <label for="password" class="">Password</label>
-          </div>
+          </div> -->
           <div class="input-field col s12 m6">
-              <select id="level" name="level">
+              <select disabled id="level" name="level">
                   <option <?php echo ($user->level === 'mitra') ? 'selected' : ''; ?> value="mitra">Mitra</option>
                   <option <?php echo ($user->level === 'administrator') ? 'selected' : ''; ?> value="administrator">Administrator</option>
                   <option <?php echo ($user->level === 'pelanggan') ? 'selected' : ''; ?> value="pelanggan">Pelanggan</option>
