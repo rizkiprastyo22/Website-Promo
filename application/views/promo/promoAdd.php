@@ -40,7 +40,7 @@
           </div>
           <div class="input-field col s12 m6">
               <input id="deskripsi" name="deskripsi" type="text" value="<?php echo set_value('deskripsi'); ?>">
-              <label for="deskripsi" class="">Deskripsi Singkat (1 kalimat):</label>
+              <label for="deskripsi" class="">Deskripsi Singkat (1 kalimat)</label>
           </div>
           <div class="input-field file-field col s12 m6">
                 <div class="btn red lighten-2">
@@ -51,11 +51,14 @@
                   <input class="file-path validate" name="foto" type="text" accept="image/png, image/jpeg" value="<?php echo set_value('foto'); ?>">
                 </div>
           </div>
-          <div class="col s12 m6 left-align">
+          <div class="col s12 m12 l12 left-align">
             Format Upload Gambar (tanpa spasi): <br><span style="color:blue;">KodeMitra_InisialPromo_FotoKeberapa</span><br>(Misal: HW_NG_8)
           </div>
+          <!-- <div class="input-field col s12 m6 l6 left-align">
+            <br><a href="<?php echo base_url('promo'); ?>"><button name="batal" class="btn blue lighten-2 waves-effect waves-green">Kembali</button></a>
+          </div> -->
           <div class="input-field col s12 right-align">
-              <button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
+            <br><button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
       </div>

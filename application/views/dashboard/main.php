@@ -43,7 +43,7 @@
 						<!-- <a href=""> -->
 							<figure class="card light-blue lighten-4" style="min-height: 600px; max-height: 600px;">
 								<div class="card-image">
-									<img src="<?php echo base_url('assets/images/') . $row->foto; ; ?>" alt="Image" class="img-fluid tm-gallery-img" />
+									<img src="<?php echo base_url('assets/images/') . $row->foto; ; ?>" alt="Image" class="img-fluid tm-gallery-img" style="height: 250px;" />
 									<figcaption class="container">
 										<h3 class="tm-gallery-title"><?php echo $row->promo; ?></h3>
 										<h4 class="tm-gallery-resto"><?php echo $row->mitra; ?></h4>

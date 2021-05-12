@@ -19,19 +19,21 @@
                       <th>No</th>
                       <th>Nama Lengkap</th>
                       <th>Email</th>
-                      <th>Terakhir Login</th>
+                      <!-- <th>Terakhir Login</th> -->
                       <!-- <th class="center-align">Active</th>
                       <th class="center-align">Last Login</th> -->
                       <th class="center-align">Edit Akun</th>
                   </tr>
               </thead>
               <tbody>
-                  <?php $no = 0; foreach($users as $row): ?>
+                  <?php $no = 0; foreach($users as $row): 
+                    $email = explode('@', $row->username);
+                    ?>
                     <tr>
                       <td><?php echo ++$no; ?></td>
                       <td><?php echo $row->nama; ?></td>
-                      <td><?php echo $row->username; ?></td>
-                      <td><?php echo $row->last_login; ?></td>
+                      <td><?php echo $email[0].'<br>@'.$email[1]; ?></td>
+                      <!-- <td><?php echo $row->last_login; ?></td> -->
                       <!-- <td class="center-align"><?php echo $row->active; ?></td>
                       <td class="center-align"><?php echo $row->last_login; ?></td> -->
                       <td class="center-align">

@@ -124,7 +124,17 @@
                       </div>
                       <div class="input-field col m12">
                         <input id="aggreement" type="checkbox" class="validate" name="aggreement">
-                        <label for="aggreement">Saya telah membaca dan menyetujui <a href="#">Syarat dan Ketentuan yang berlaku di Hemat Warrior</a></label>
+                        <label for="aggreement">Saya telah membaca dan menyetujui <a href="#modal2">Syarat dan Ketentuan yang berlaku di Hemat Warrior</a></label>
+                        <div id="modal2" class="modal">
+                          <div class="modal-content red lighten-2 white-text">
+                            <h4 style="font-size: 1.5rem;">Syarat dan Ketentuan Pengguna Aplikasi Hemat Warrior</h4>
+                          </div>
+                          <div class="modal-content">
+                            <p style="font-size: 1.2rem;">Bercanda hehe</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#password-tab" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+                          </div>
                       </div>
                       <!-- <div class="input-field col m12 left-align">
                             Sudah punya akun? Silakan <a href="#basic-tab">login</a>
@@ -154,5 +164,18 @@
     </footer>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="<?php echo base_url('assets/materialize/js/materialize.js'); ?>"></script>
+    <script>
+    (function ($) {
+      $(function () {
+
+          //initialize all modals           
+          $('.modal').modal();
+
+          //or by click on trigger
+          $('.trigger-modal').modal();
+
+      }); // end of document ready
+    })(jQuery); // end of jQuery name space
+   </script>
   </body>
 </html>

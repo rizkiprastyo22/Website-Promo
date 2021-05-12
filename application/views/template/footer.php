@@ -15,6 +15,19 @@
    <script>
     function(){t('[data-parallax="scroll"]').parallax()})}(jQuery,window,document);
    </script>
+   <script>
+    (function ($) {
+      $(function () {
+
+          //initialize all modals           
+          $('.modal').modal();
+
+          //or by click on trigger
+          $('.trigger-modal').modal();
+
+      }); // end of document ready
+    })(jQuery); // end of jQuery name space
+   </script>
    <!-- <script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
    <script src="<?php echo base_url('js/parallax.min.js'); ?>"></script>
    <script>

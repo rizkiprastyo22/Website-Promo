@@ -37,7 +37,20 @@
                       <td class="center-align">Rp. <?php echo $harga_promo; ?></td>
                       <td class="center-align">
                         <a href="<?php echo base_url('promo/edit/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Edit Data"><i class="material-icons">edit</i></a>
-                        <a href="<?php echo base_url('promo/delete/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a>
+                        <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a>
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                          <div class="modal-content red lighten-2 white-text">
+                            <h4 style="font-size: 1.5rem;">Konfirmasi Delete Promo</h4>
+                          </div>
+                          <div class="modal-content">
+                            <p style="font-size: 1.2rem;">Apakah kamu yakin mau menghapus promo "<?php echo $row->promo; ?>"?</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="<?php echo base_url('promo/delete/' . $row->id); ?>" class="modal-close waves-effect waves-green btn-flat">Yakin</a>
+                            <a href="" class="modal-close waves-effect waves-green btn-flat">Tidak Jadi</a>
+                          </div>
+                        </div>
                       </td>
                     </tr>
                   <?php endforeach; ?>

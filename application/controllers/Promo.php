@@ -136,33 +136,33 @@ class Promo extends MY_Controller {
 
         // if(isset($_POST['submit_email'])){
           // $email = $this->input->post('email');
-          $email = 'rizkiprastyo1@gmail.com';
-          $subject = $this->input->post('mitra').' sedang ada diskon besar!';
-          $pesan = 'Bagi kamu pelanggan setia '.$this->input->post('mitra').', lagi ada diskon menu '.$this->input->post('promo').': -'.$this->input->post('deskripsi').'- dari yang harganya '.$this->input->post('harga_awal').' JADI CUMA '.$this->input->post('harga_promo');
+          // $email = 'rizkiprastyo1@gmail.com';
+          // $subject = $this->input->post('mitra').' sedang ada diskon besar!';
+          // $pesan = 'Bagi kamu pelanggan setia '.$this->input->post('mitra').', lagi ada diskon menu '.$this->input->post('promo').': -'.$this->input->post('deskripsi').'- dari yang harganya '.$this->input->post('harga_awal').' JADI CUMA '.$this->input->post('harga_promo');
     
-          if(!empty($email)){
-            $config = [
-              'mailtype' => 'text',
-              'charset' => 'iso-8859-1',
-              'protocol' => 'smtp',
-              'smtp_host' => 'ssl://smtp.googlemail.com',
-              'smtp_user' => 'hematwarrior.gmail',
-              'smtp_pass' => 'SemangatIAI21',
-              'smtp_port' => 465
-            ];
+          // if(!empty($email)){
+          //   $config = [
+          //     'mailtype' => 'text',
+          //     'charset' => 'iso-8859-1',
+          //     'protocol' => 'smtp',
+          //     'smtp_host' => 'ssl://smtp.googlemail.com',
+          //     'smtp_user' => 'hematwarrior@gmail.com',
+          //     'smtp_pass' => 'SemangatIAI21',
+          //     'smtp_port' => 465
+          //   ];
     
-            $this->load->library('email', $config);
-            $this->email->initialize($config);
+          //   $this->load->library('email', $config);
+          //   $this->email->initialize($config);
     
-            $this->email->from('hematwarrior@gmail.com', 'Hemat Warrior');
-            $this->email->to($email);
-            $this->email->subject($subject);
-            $this->email->message($pesan);
+          //   $this->email->from('hematwarrior@gmail.com', 'Hemat Warrior');
+          //   $this->email->to($email);
+          //   $this->email->subject($subject);
+          //   $this->email->message($pesan);
 
-            $this->email->send();
+          //   $this->email->send();
 
             // $what = $this->email->send();
-          }
+          // }
           // if ($what) $message = array('email' => 'Berhasil mengirim email!');
           // else $message = array('email' => show_error($this->email->print_debugger()));  
 
