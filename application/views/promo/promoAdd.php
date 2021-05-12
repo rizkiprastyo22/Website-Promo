@@ -23,8 +23,8 @@
             </div>
           <?php endif; ?>
           <div class="input-field col s12 m6">
-              <input id="mitra" name="mitra" type="text" value="<?php echo set_value('mitra', $this->session->userdata('nama')); ?>">
-              <label for="mitra" class="">Mitra</label>
+              <input id="mitra" name="mitra" type="text" readonly value="<?php echo set_value('mitra', $this->session->userdata('id')); ?>">
+              <label for="mitra" class="">ID Mitra</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="promo" name="promo" type="text" value="<?php echo set_value('promo'); ?>">

@@ -23,7 +23,7 @@
           <?php endif; ?>
           <div class="input-field col s12 m6">
               <input id="mitra" disabled name="mitra" type="text" value="<?php echo $promo->mitra; ?>">
-              <label for="mitra" class="">Mitra</label>
+              <label for="mitra" class="">ID Mitra</label>
           </div>
           <div class="input-field col s12 m6">
               <input id="promo" disabled name="promo" type="text" value="<?php echo $promo->promo; ?>">

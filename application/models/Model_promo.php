@@ -49,6 +49,18 @@
       return $query;
     }
 
+    public function get_active($where)
+    {
+      // Jalankan query
+      $query = $this->db
+        ->where($where)
+        ->get($this->table)
+        ->join('users', 'users.id = $this->table.mitra');
+
+      // Return hasil query
+      return $query;
+    }
+
     public function insert($data)
     {
       // Jalankan query

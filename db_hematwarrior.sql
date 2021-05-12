@@ -3,7 +3,7 @@ USE hemat_warrior;
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nama` varchar(50) NOT NULL,
+  `nama` varchar(255) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `level` enum('mitra','pelanggan','administrator') NOT NULL DEFAULT 'pelanggan',
@@ -22,15 +22,16 @@ INSERT INTO `users` VALUES ('2', 'Hemat Warrior', 'admin@hematwarrior.id', '$2y$
 CREATE TABLE `promo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `promo` varchar(100) NOT NULL,
-  `mitra` varchar(100) NOT NULL,
+  `mitra` INT(11) NOT NULL,
   `harga_awal` int(11) NOT NULL,
   `harga_promo` int(11) NOT NULL,
   `deskripsi` varchar(5000) NOT NULL,
   `foto` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`mitra`) REFERENCES users(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of pelanggan
 -- ----------------------------
-INSERT INTO `promo` VALUES ('1', 'Fusce dictum finibus', 75000, 50000, 'Makanan enak lah pokoknya');
+INSERT INTO `promo` VALUES ('1', 'Fusce dictum finibus', 1, 75000, 50000, 'Makanan enak lah pokoknya', '01.jpg');

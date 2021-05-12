@@ -8,20 +8,15 @@ class Dashboard extends MY_Controller
     $this->cekLogin();
 
     // Load model Promo
-    $this->load->model('model_promo');
+    $this->load->model('model_active');
   }
 
   public function index()
   {
     $data['pageTitle'] = 'Home';
-    $data['promo'] = $this->model_promo->get()->result();
+    $data['promo'] = $this->model_active->get();
     $data['pageContent'] = $this->load->view('dashboard/main', $data, TRUE);
 
     $this->load->view('template/layout', $data);
-  }
-
-  public function routing_ka_ayah()
-  {
-    echo 'Hahaha';
   }
 }
