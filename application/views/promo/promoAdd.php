@@ -18,6 +18,7 @@
             <div class="col s12">
               <div class="card-panel <?php echo ($message['status']) ? 'green' : 'red'; ?>">
                 <span class="white-text"><?php echo $message['message']; ?></span>
+                <!-- <span class="white-text"><?php echo $message['email']; ?></span> -->
               </div>
             </div>
           <?php endif; ?>

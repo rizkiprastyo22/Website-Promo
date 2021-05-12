@@ -28,6 +28,42 @@ class Promo extends MY_Controller {
     $this->load->view('template/layout', $data);
   }
 
+  // public function sendmail()
+  // {
+  //   if(isset($_POST['submit_email'])){
+  //     $email = $this->input->post('email');
+  //     $subject = $this->input->post('subject');
+  //     $pesan = $this->input->post('pesan');
+
+  //     if(!empty($email)){
+  //       $config = [
+  //         'mailtype' => 'text',
+  //         'charset' => 'iso-8859-1',
+  //         'protocol' => 'smtp',
+  //         'smtp_host' => 'ssl://smtp.googlemail.com',
+  //         'smtp_user' => 'hematwarrior.gmail',
+  //         'smtp_pass' => 'SemangatIAI21',
+  //         'smtp_port' => 465
+  //       ];
+
+  //       $this->load->library('email', $config);
+  //       $this->email->initialize($config);
+
+  //       $this->emai->from('emailfrom');
+  //       $this->emai->to($email);
+  //       $this->emai->subject($subject);
+  //       $this->emai->message($pesan);
+
+  //       if($this->email-send()){
+  //         echo "Email berhasil dikirim!"
+  //       } else{
+  //         show_error($this->email->print_debugger())
+  //       }
+
+  //     }
+  //   }
+  // }
+
   public function add()
   {
     // Jika form di submit jalankan blok kode ini
@@ -98,12 +134,45 @@ class Promo extends MY_Controller {
         // Jalankan function insert pada model_promo
         $query = $this->model_promo->insert($data);
 
-        // cek jika query berhasil
-        if ($query) $message = array('status' => true, 'message' => 'Berhasil menambahkan promo');
-        else $message = array('status' => true, 'message' => 'Gagal menambahkan promo');
+        // if(isset($_POST['submit_email'])){
+          // $email = $this->input->post('email');
+          $email = 'rizkiprastyo1@gmail.com';
+          $subject = $this->input->post('mitra').' sedang ada diskon besar!';
+          $pesan = 'Bagi kamu pelanggan setia '.$this->input->post('mitra').', lagi ada diskon menu '.$this->input->post('promo').': -'.$this->input->post('deskripsi').'- dari yang harganya '.$this->input->post('harga_awal').' JADI CUMA '.$this->input->post('harga_promo');
+    
+          if(!empty($email)){
+            $config = [
+              'mailtype' => 'text',
+              'charset' => 'iso-8859-1',
+              'protocol' => 'smtp',
+              'smtp_host' => 'ssl://smtp.googlemail.com',
+              'smtp_user' => 'hematwarrior.gmail',
+              'smtp_pass' => 'SemangatIAI21',
+              'smtp_port' => 465
+            ];
+    
+            $this->load->library('email', $config);
+            $this->email->initialize($config);
+    
+            $this->email->from('hematwarrior@gmail.com', 'Hemat Warrior');
+            $this->email->to($email);
+            $this->email->subject($subject);
+            $this->email->message($pesan);
 
-        // simpan message sebagai session
-        $this->session->set_flashdata('message', $message);
+            $this->email->send();
+
+            // $what = $this->email->send();
+          }
+          // if ($what) $message = array('email' => 'Berhasil mengirim email!');
+          // else $message = array('email' => show_error($this->email->print_debugger()));  
+
+          // cek jika query berhasil
+          if ($query) $message = array('status' => true, 'message' => 'Berhasil menambahkan promo');
+          else $message = array('status' => true, 'message' => 'Gagal menambahkan promo');
+
+          // simpan message sebagai session
+          $this->session->set_flashdata('message', $message);
+        // }
 
         // refresh page
         redirect('promo/add', 'refresh');

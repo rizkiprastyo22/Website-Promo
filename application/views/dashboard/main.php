@@ -39,7 +39,7 @@
 					$harga_awal = number_format($row->harga_awal);
 					$harga_promo = number_format($row->harga_promo);
 					?>
-                    <article class="col s12 offset-s2 m4 l3 tm-gallery-item">
+                    <article class="col s12 offset-s1 m4 l3 tm-gallery-item">
 						<!-- <a href=""> -->
 							<figure class="card light-blue lighten-4" style="min-height: 600px; max-height: 600px;">
 								<div class="card-image">
