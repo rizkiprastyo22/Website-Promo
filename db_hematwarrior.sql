@@ -8,7 +8,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `level` enum('mitra','pelanggan','administrator') NOT NULL DEFAULT 'pelanggan',
   `last_login` datetime NOT NULL,
-  `active` enum('0','1') NOT NULL DEFAULT '1',
+  `active` enum('aktif','tidak aktif') NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 

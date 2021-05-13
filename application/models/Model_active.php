@@ -7,7 +7,7 @@
       $query = $this->db
       ->from('promo')
       ->join('users', 'users.id = promo.mitra')
-      ->where('active', '1')
+      ->where('active', 'aktif')
       ->get();
 
       // Return hasil query

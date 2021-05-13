@@ -80,8 +80,8 @@
                       <!-- <div class="input-field col m12 left-align">
                             Belum punya akun? <a href="#password-tab">Daftar Sekarang!</a>
                         </div> -->
-                      <div class="input-field col m12 right-align">
-                        <button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
+                      <div class="input-field col s12 m12 l12 right-align">
+                        <br><button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
                           Login
                         </button>
                       </div>
@@ -139,7 +139,7 @@
                       <!-- <div class="input-field col m12 left-align">
                             Sudah punya akun? Silakan <a href="#basic-tab">login</a>
                         </div> -->
-                      <div class="input-field col m12 right-align">
+                      <div class="input-field col s12 m12 l12 right-align">
                         <br><br><button class="btn waves-effect waves-light btn-primary btn-pill red lighten-2" type="submit" name="submit" value="login">
                           Sign Up
                         </button>

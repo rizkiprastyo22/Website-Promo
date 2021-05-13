@@ -42,19 +42,19 @@
           </div>
           <div class="input-field col s12">
               <select id="active" name="active">
-                  <option value="1">Ya</option>
-                  <option value="0">Tidak</option>
+                  <option value="aktif">Aktif</option>
+                  <option value="tidak aktif">Tidak Aktif</option>
               </select>
-              <label>Active</label>
+              <label>Status Akun</label>
           </div>
-          <div class="input-field col s12 m6 l6 left-align">
+          <div class="input-field col s6 m6 l6 left-align">
             <br><br><a href="#modal5"><button name="batal" class="btn light blue lighten-2 waves-effect waves-green">Kembali</button></a>
           </div>
-          <div class="input-field col s12 m6 l6 right-align">
+          <div class="input-field col s6 m6 l6 right-align">
             <br><br><button type="submit" name="submit" value="add_user" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
-        <div id="modal5" class="modal center-align" style="width:350px;">
+        <div id="modal5" class="modal center-align" style="width:320px;">
           <div class="modal-content red lighten-2 white-text">
             <h4 style="font-size: 1.5rem;">Konfirmasi kembali</h4>
           </div>

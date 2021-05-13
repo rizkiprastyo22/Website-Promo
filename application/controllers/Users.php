@@ -62,7 +62,7 @@ class Users extends MY_Controller {
       // # required = tidak boleh kosong
       // # in_list[0, 1] = hanya boleh bernilai 
       // salah satu di antara 0 atau 1
-      $this->form_validation->set_rules('active', 'Active', 'required|in_list[0,1]');
+      $this->form_validation->set_rules('active', 'Status akun', 'required|in_list[aktif,tidak aktif]');
 
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');
@@ -130,7 +130,7 @@ class Users extends MY_Controller {
       // # required = tidak boleh kosong
       // # in_list[0, 1] = hanya boleh bernilai 
       // salah satu di antara 0 atau 1
-      $this->form_validation->set_rules('active', 'Active', 'required|in_list[0,1]');
+      $this->form_validation->set_rules('active', 'Status akun', 'required|in_list[0,1]');
 
       // Mengatur pesan error validasi data
       $this->form_validation->set_message('required', '%s tidak boleh kosong!');

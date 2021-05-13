@@ -53,15 +53,15 @@
           <div class="col s12 m6 left-align">
             Format Upload Gambar (tanpa spasi): <br><span style="color:blue;">KodeMitra_InisialPromo_FotoKeberapa</span><br>(Misal: HW_NG_8)<br><span style="color:red;">*nilai foto keberapa harus +1 dari file sebelumnya</span>
           </div>
-          <div class="input-field col s12 m6 l6 left-align">
+          <div class="input-field col s6 m6 l6 left-align">
             <br><br><a href="#modal4"><button name="batal" class="btn light blue lighten-2 waves-effect waves-green">Kembali</button></a>
           </div>
-          <div class="input-field col s12 m6 l6 right-align">
-              <button type="submit" name="submit-promo" value="<?php echo $promo->id; ?>" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
+          <div class="input-field col s6 m6 l6 right-align">
+            <br><br><button type="submit" name="submit-promo" value="<?php echo $promo->id; ?>" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
         <!-- Modal Structure -->
-        <div id="modal4" class="modal center-align" style="width:350px;">
+        <div id="modal4" class="modal center-align" style="width:320px;">
           <div class="modal-content red lighten-2 white-text">
             <h4 style="font-size: 1.5rem;">Konfirmasi kembali</h4>
           </div>

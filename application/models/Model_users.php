@@ -7,7 +7,7 @@
     {
       // Get data user yang mempunyai username == $username dan active == 1
       $this->db->where('username', $username);
-      $this->db->where('active', '1');
+      $this->db->where('active', 'aktif');
 			
       // Jalankan query
       $query = $this->db->get($this->table)->row();

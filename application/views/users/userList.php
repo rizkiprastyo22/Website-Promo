@@ -18,7 +18,7 @@
                   <tr>
                       <th>No</th>
                       <th>Nama Lengkap</th>
-                      <th>Email</th>
+                      <th>Status Akun</th>
                       <!-- <th>Terakhir Login</th> -->
                       <!-- <th class="center-align">Active</th>
                       <th class="center-align">Last Login</th> -->
@@ -32,10 +32,10 @@
                     <tr>
                       <td><?php echo ++$no; ?></td>
                       <td><?php echo $row->nama; ?></td>
-                      <td><?php echo $email[0].'<br>@'.$email[1]; ?></td>
+                      <!-- <td><?php echo $email[0].'<br>@'.$email[1]; ?></td> -->
                       <!-- <td><?php echo $row->last_login; ?></td> -->
-                      <!-- <td class="center-align"><?php echo $row->active; ?></td>
-                      <td class="center-align"><?php echo $row->last_login; ?></td> -->
+                      <td><?php echo ucwords($row->active); ?></td>
+                      <!-- <td class="center-align"><?php echo $row->last_login; ?></td> -->
                       <td class="center-align">
                         <a href="<?php echo base_url('users/edit/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Edit Data"><i class="material-icons">edit</i></a>
                         <!-- <a href="<?php echo base_url('users/delete/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a> -->
