@@ -40,17 +40,32 @@
               </select>
               <label>Pilih Level</label>
           </div>
-          <div class="input-field col s12 m6">
+          <div class="input-field col s12">
               <select id="active" name="active">
                   <option value="1">Ya</option>
                   <option value="0">Tidak</option>
               </select>
               <label>Active</label>
           </div>
-          <div class="input-field col s12 right-align">
-              <button type="submit" name="submit" value="add_user" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
+          <div class="input-field col s12 m6 l6 left-align">
+            <br><br><a href="#modal5"><button name="batal" class="btn light blue lighten-2 waves-effect waves-green">Kembali</button></a>
+          </div>
+          <div class="input-field col s12 m6 l6 right-align">
+            <br><br><button type="submit" name="submit" value="add_user" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
+        <div id="modal5" class="modal center-align" style="width:350px;">
+          <div class="modal-content red lighten-2 white-text">
+            <h4 style="font-size: 1.5rem;">Konfirmasi kembali</h4>
+          </div>
+          <div class="modal-content">
+            <p style="font-size: 1.2rem;">Apakah kamu yakin mau kembali?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="<?php echo base_url('users'); ?>" class="modal-close waves-effect waves-green btn-flat">Yakin</a>
+            <a href="" class="modal-close waves-effect waves-green btn-flat">Tidak Jadi</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

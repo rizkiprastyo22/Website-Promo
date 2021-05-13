@@ -54,13 +54,26 @@
           <div class="col s12 m12 l12 left-align">
             Format Upload Gambar (tanpa spasi): <br><span style="color:blue;">KodeMitra_InisialPromo_FotoKeberapa</span><br>(Misal: HW_NG_8)
           </div>
-          <!-- <div class="input-field col s12 m6 l6 left-align">
-            <br><a href="<?php echo base_url('promo'); ?>"><button name="batal" class="btn blue lighten-2 waves-effect waves-green">Kembali</button></a>
-          </div> -->
-          <div class="input-field col s12 right-align">
-            <br><button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
+          <div class="input-field col s12 m6 l6 left-align">
+            <br><br><a href="#modal3"><button name="batal" class="btn light blue lighten-2 waves-effect waves-green">Kembali</button></a>
+          </div>
+          <div class="input-field col s12 m6 l6 right-align">
+            <br><br><button type="submit" name="submit-promo" value="add_promo" class="btn red lighten-2 waves-effect waves-green">Simpan</button>
           </div>
         </form>
+        <!-- Modal Structure -->
+        <div id="modal3" class="modal center-align" style="width:350px;">
+          <div class="modal-content red lighten-2 white-text">
+            <h4 style="font-size: 1.5rem;">Konfirmasi kembali</h4>
+          </div>
+          <div class="modal-content">
+            <p style="font-size: 1.2rem;">Apakah kamu yakin mau kembali?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="<?php echo base_url('promo'); ?>" class="modal-close waves-effect waves-green btn-flat">Yakin</a>
+            <a href="" class="modal-close waves-effect waves-green btn-flat">Tidak Jadi</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

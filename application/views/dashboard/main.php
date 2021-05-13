@@ -46,7 +46,7 @@
 									<img src="<?php echo base_url('assets/images/') . $row->foto; ; ?>" alt="Image" class="img-fluid tm-gallery-img" style="height: 250px;" />
 									<figcaption class="container">
 										<h3 class="tm-gallery-title"><?php echo $row->promo; ?></h3>
-										<h4 class="tm-gallery-resto"><?php echo $row->mitra; ?></h4>
+										<h4 class="tm-gallery-resto"><?php echo $row->nama; ?></h4>
 										<p class="tm-gallery-description"><?php echo $row->deskripsi; ?></p>
 										<p class="tm-gallery-price"><del>Rp. <?php echo $harga_awal; ?></del><br>Rp. <?php echo $harga_promo; ?></p><br>
 									</figcaption>
