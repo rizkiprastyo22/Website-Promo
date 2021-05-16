@@ -1,5 +1,5 @@
 <aside>
-  <ul id="sidenav" class="side-nav fixed light blue lighten-4">
+  <ul id="sidenav" class="side-nav fixed red lighten-4">
     <li>
       <div class="userView">
         <div class="background">
@@ -28,7 +28,7 @@
       </li> -->
       
       <li>
-        <a class="waves-effect" href="<?php echo base_url('promo'); ?>"><i class="material-icons">people</i>Promo</a>
+        <a class="waves-effect" href="<?php echo base_url('promo'); ?>"><i class="material-icons">assignment</i>Promo</a>
       </li>
       
       <li>
