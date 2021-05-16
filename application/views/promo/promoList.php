@@ -4,7 +4,7 @@
       <div class="card">
         <div class="card-content red lighten-2 white-text">
           <span class="card-title">Data Promo</span>
-          <a href="<?php echo base_url('promo/add'); ?>" class="btn-floating right halfway-fab waves-effect waves-light green lighten-2 tooltipped" data-position="top" data-tooltip="Tambah Data"><i class="material-icons">add</i></a>
+          <a href="<?php echo base_url('promo/add'); ?>" class="btn-floating right halfway-fab waves-effect waves-light red lighten-4 tooltipped" data-position="top" data-tooltip="Tambah Data"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
           <?php if($message = $this->session->flashdata('message')): ?>
@@ -37,9 +37,9 @@
                       <td class="center-align">Rp. <?php echo $harga_promo; ?></td>
                       <td class="center-align">
                         <a href="<?php echo base_url('promo/edit/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Edit Data"><i class="material-icons">edit</i></a>
-                        <a href="#modal1" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a>
+                        <a href="<?php echo base_url('promo/delete/' . $row->id); ?>" class="btn-floating halfway-fab waves-effect waves-light tooltipped red lighten-2" data-position="top" data-tooltip="Delete Data"><i class="material-icons">delete</i></a>
                         <!-- Modal Structure -->
-                        <div id="modal1" class="modal">
+                        <!-- <div id="modal1" class="modal">
                           <div class="modal-content red lighten-2 white-text">
                             <h4 style="font-size: 1.5rem;">Konfirmasi Delete Promo</h4>
                           </div>
@@ -50,7 +50,7 @@
                             <a href="<?php echo base_url('promo/delete/' . $row->id); ?>" class="modal-close waves-effect waves-green btn-flat">Yakin</a>
                             <a href="" class="modal-close waves-effect waves-green btn-flat">Tidak Jadi</a>
                           </div>
-                        </div>
+                        </div> -->
                       </td>
                     </tr>
                   <?php endforeach; ?>

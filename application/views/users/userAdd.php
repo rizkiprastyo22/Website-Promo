@@ -62,7 +62,7 @@
             <p style="font-size: 1.2rem;">Apakah kamu yakin mau kembali?</p>
           </div>
           <div class="modal-footer">
-            <a href="<?php echo base_url('users'); ?>" class="modal-close waves-effect waves-green btn-flat">Yakin</a>
+            <a href="<?php echo base_url('users'); ?>" class="modal-close waves-effect waves-green btn red lighten-2">Yakin</a>
             <a href="" class="modal-close waves-effect waves-green btn-flat">Tidak Jadi</a>
           </div>
         </div>

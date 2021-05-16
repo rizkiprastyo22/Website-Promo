@@ -133,7 +133,7 @@
                             <p style="font-size: 1.2rem;">Bercanda hehe</p>
                           </div>
                           <div class="modal-footer">
-                            <a href="#password-tab" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
+                            <a href="#password-tab" class="modal-close waves-effect waves-green btn red lighten-2">Tutup</a>
                           </div>
                       </div>
                       <!-- <div class="input-field col m12 left-align">
